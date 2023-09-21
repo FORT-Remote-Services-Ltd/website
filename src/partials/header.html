@@ -34,13 +34,15 @@
       <nav>
         <ul class="flex lg:items-center flex-col lg:flex-row gap-5 lg:gap-10">
           <li><a href="index.html" class="hover:text-primary" :class="{ 'text-primary': page === 'home' }">Home</a></li>
-          <li><a href="index.html#features" class="hover:text-primary">Features</a></li>
+          <li><a href="index.html#features" class="hover:text-primary">Services</a></li>
+          <li><a href="about-us.html" class="hover:text-primary">About Us</a></li>
+          <li><a href="contact.html" class="hover:text-primary">Contact Us</a></li>
           <li class="group relative" x-data="{ dropdown: false }">
             <a
               href="#"
               class="hover:text-primary flex items-center justify-between gap-3"
               @click.prevent="dropdown = !dropdown"
-              :class="{ 'text-primary': page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' }"
+              :class="{ 'text-primary': page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' || page ==='about-us' || page === 'contact' }"
             >
               Pages
 

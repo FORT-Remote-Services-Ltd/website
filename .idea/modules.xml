@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Fort.iml" filepath="$PROJECT_DIR$/.idea/Fort.iml" />
+<<<<<<< HEAD
+  
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/SolidTailwindMain.iml" filepath="$PROJECT_DIR$/.idea/SolidTailwindMain.iml" />
+>>>>>>> 11193d5f4d1f6f79430b7d56a854030bdaf89b07
     </modules>
   </component>
 </project>

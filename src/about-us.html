@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us || Fort Remote Services</title>
+</head>
+<body
+        x-data="{ page: 'about-us', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
+        x-init="
+         darkMode = JSON.parse(localStorage.getItem('darkMode'));
+         $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
+        :class="{'dark bg-black': darkMode === true}"
+>
+<!-- ===== Bg Lines Start ===== -->
+<include src="./partials/lines.html" />
+<!-- ===== Bg Lines End ===== -->
+
+<!-- ===== Header Start ===== -->
+<include src="./partials/header.html" />
+<!-- ===== Header End ===== -->
+
+<main>
+    <!-- ===== About us Section  Start ===== -->
+    <section id="features" class="py-20 lg:py-25 xl:py-30 h-screen">
+        <div class="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
+            <!-- Section Title Start -->
+            <div
+                    class="animate_top text-center mx-auto"
+                    x-data="{ sectionSubtitle: `ABOUT US`, sectionTitlePara: `At FORT Remote, we take pride in our unwavering commitment to delivering top-notch bookkeeping services that help your business thrive. `}"
+            >
+                <include src="./partials/section-title.html" />
+            </div>
+            <!-- Section Title End -->
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7.5 xl:gap-12.5 mt-12.5 lg:mt-15 xl:mt-20">
+                <!-- Features item Start -->
+                <div class="animate_top border border-white shadow-solid-3 rounded-lg p-7.5 xl:p-12.5 transition-all hover:shadow-solid-4 dark:hover:bg-hoverdark dark:border-strokedark dark:bg-blacksection">
+                    <div class="flex items-center justify-center rounded-[4px] bg-primary w-16 h-16">
+                        <img src="./images/icon/icon-01.svg" alt="Icon" />
+                    </div>
+                    <h3 class="font-semibold text-xl xl:text-itemtitle text-black dark:text-white mt-7.5 mb-5">About</h3>
+                    <p>Welcome to FORT Remote, your trusted partner for remote business support services. With a strong commitment to excellence and a team of dedicated professionals, we have been helping businesses worldwide streamline their operations and enhance their efficiency since for over ten years.
+                    </p>
+                </div>
+                <!-- Features item End -->
+
+                <!-- Features item Start -->
+                <div class="animate_top border border-white shadow-solid-3 rounded-lg p-7.5 xl:p-12.5 transition-all hover:shadow-solid-4 dark:hover:bg-hoverdark dark:border-strokedark dark:bg-blacksection">
+                    <div class="flex items-center justify-center rounded-[4px] bg-primary w-16 h-16">
+                        <img src="./images/icon/icon-02.svg" alt="Icon" />
+                    </div>
+                    <h3 class="font-semibold text-xl xl:text-itemtitle text-black dark:text-white mt-7.5 mb-5">Our Story</h3>
+                    <p>FORT Remote was founded with a precise vision - to empower businesses of all sizes with reliable and cost-effective remote support services.
+                        <br> We recognized that in an increasingly digital world, companies needed a dependable partner to handle critical tasks like bookkeeping, data entry, and customer care without the need for an in-house team.
+                    </p>
+                </div>
+                <!-- Features item End -->
+
+                <!-- Features item Start -->
+                <div class="animate_top border border-white shadow-solid-3 rounded-lg p-7.5 xl:p-12.5 transition-all hover:shadow-solid-4 dark:hover:bg-hoverdark dark:border-strokedark dark:bg-blacksection">
+                    <div class="flex items-center justify-center rounded-[4px] bg-primary w-16 h-16">
+                        <img src="./images/icon/icon-03.svg" alt="Icon" />
+                    </div>
+                    <h3 class="font-semibold text-xl xl:text-itemtitle text-black dark:text-white mt-7.5 mb-5">Our Mission</h3>
+                    <p>Our mission is simple yet profound: To enable businesses to thrive in the digital age by providing exceptional remote tools and expertise they need to excel in their respective industries.
+                        We believe that success is built on a foundation of efficiency, accuracy, and outstanding customer experiences.
+                        We are committed to delivering exceptional services that free our clients from administrative burdens and allow them to focus on growth and innovation.
+                        We are driven by this mission every day, and it guides everything we do.
+                    </p>
+                </div>
+                <!-- Features item End -->
+
+                <!-- Features item Start -->
+                <!--<div class="animate_top border border-white shadow-solid-3 rounded-lg p-7.5 xl:p-12.5 transition-all hover:shadow-solid-4 dark:hover:bg-hoverdark dark:border-strokedark dark:bg-blacksection">
+                  <div class="flex items-center justify-center rounded-[4px] bg-primary w-16 h-16">
+                    <img src="./images/icon/icon-04.svg" alt="Icon" />
+                  </div>
+                  <h3 class="font-semibold text-xl xl:text-itemtitle text-black dark:text-white mt-7.5 mb-5">Speed Optimized</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+                </div>-->
+                <!-- Features item End -->
+
+                <!-- Features item Start -->
+                <!--<div class="animate_top border border-white shadow-solid-3 rounded-lg p-7.5 xl:p-12.5 transition-all hover:shadow-solid-4 dark:hover:bg-hoverdark dark:border-strokedark dark:bg-blacksection">
+                  <div class="flex items-center justify-center rounded-[4px] bg-primary w-16 h-16">
+                    <img src="./images/icon/icon-05.svg" alt="Icon" />
+                  </div>
+                  <h3 class="font-semibold text-xl xl:text-itemtitle text-black dark:text-white mt-7.5 mb-5">Fully Customizable</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+                </div>-->
+                <!-- Features item End -->
+
+                <!-- Features item Start -->
+                <!-- <div class="animate_top border border-white shadow-solid-3 rounded-lg p-7.5 xl:p-12.5 transition-all hover:shadow-solid-4 dark:hover:bg-hoverdark dark:border-strokedark dark:bg-blacksection">
+                   <div class="flex items-center justify-center rounded-[4px] bg-primary w-16 h-16">
+                     <img src="./images/icon/icon-06.svg" alt="Icon" />
+                   </div>
+                   <h3 class="font-semibold text-xl xl:text-itemtitle text-black dark:text-white mt-7.5 mb-5">Regular Updates</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+                 </div>-->
+                <!-- Features item End -->
+            </div>
+        </div>
+    </section>
+    <!-- ===== About Us section End ===== -->
+</main>
+<!-- ===== Footer Start ===== -->
+<include src="./partials/footer.html" />
+<!-- ===== Footer End ===== -->
+
+<!-- ====== Back To Top Start ===== -->
+<include src="./partials/scrolltop.html" />
+<!-- ====== Back To Top End ===== -->
+</body>
+</html>

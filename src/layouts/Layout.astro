@@ -1,0 +1,52 @@
+---
+import Header from '../components/Header.vue'
+import Footer from '../components/Footer.astro'
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} | Fort Remote Services</title>
+  </head>
+  <body>
+    <!-- ===== Bg Lines Start ===== -->
+    <div class="fixed top-0 left-0 -z-10 flex h-full w-full items-center justify-around">
+	  <span class="w-[1px] h-full bg-stroke dark:bg-strokedark flex animate-line1"></span>
+	  <span class="w-[1px] h-full bg-stroke dark:bg-strokedark flex animate-line2"></span>
+	  <span class="w-[1px] h-full bg-stroke dark:bg-strokedark flex animate-line3"></span>
+	</div>
+    <!-- ===== Bg Lines End ===== -->
+
+    <!-- ===== Header Start ===== -->
+    <Header client:only="vue" />
+    <!-- ===== Header End ===== -->
+
+    <main>
+     <slot />
+    </main>
+    <!-- ===== Footer Start ===== -->
+    <Footer />
+    <!-- ===== Footer End ===== -->
+
+    <!-- ====== Back To Top Start ===== -->
+    <button
+	  class="hidden items-center justify-center w-10 h-10 rounded-[4px] shadow-solid-5 bg-primary hover:bg-primaryho fixed bottom-8 right-8 z-999"
+	  @click="window.scrollTo({top: 0, behavior: 'smooth'})"
+	  @scroll.window="scrollTop = (window.pageYOffset > 50) ? true : false"
+	  :class="{ '!flex' : scrollTop }"
+	>
+	  <svg class="fill-white w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+		<path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+	  </svg>
+	</button>
+    <!-- ====== Back To Top End ===== -->
+  </body>
+</html>
+

@@ -1,4 +1,4 @@
----
+clear---
 import Layout from '../layouts/Layout.astro';
 import FeatureTabs from '../components/FeatureTabs.vue'
 import Faq from '../components/Faq.vue'
@@ -84,273 +84,372 @@ import Testimonials from '../components/Testimonials.vue'
       <!-- ===== Clients End ===== -->
 
       <!-- ===== Features Start ===== -->
-      <section id="features" class="py-20 lg:py-25 xl:py-30">
-        <div class="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
-          <!-- Section Title Start -->
-          <div
-            class="animate_top text-center mx-auto"
-            x-data="{ sectionTitle: `OUR SERVICES`, sectionSubtitle: `Our Services Core Features`, sectionTitlePara: `Discover how Your Remote Business Solutions can optimize your operations with our specialized services`}"
-          >
-            <include src="./partials/section-title.html" />
+  <section id="features" class="py-20 lg:py-25 xl:py-30">
+    <div class="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
+      <!-- Section Title Start -->
+      <div
+          class="animate_top text-center mx-auto"
+          x-data="{ sectionTitle: `OUR SERVICES`, sectionSubtitle: `Our Services Core Features`, sectionTitlePara: `Discover how Your Remote Business Solutions can optimize your operations with our specialized services`}"
+      >
+        <include src="./partials/section-title.html"/>
+      </div>
+      <!-- Section Title End -->
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7.5 xl:gap-12.5 mt-12.5 lg:mt-15 xl:mt-20">
+        <!-- Features item Start -->
+        <div class="animate_top border border-white shadow-solid-3 rounded-lg p-7.5 xl:p-12.5 transition-all hover:shadow-solid-4 dark:hover:bg-hoverdark dark:border-strokedark dark:bg-blacksection">
+          <div class="flex items-center justify-center rounded-[4px] bg-primary w-16 h-16">
+            <img src="./images/icon/icon-01.svg" alt="Icon"/>
           </div>
-          <!-- Section Title End -->
-
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7.5 xl:gap-12.5 mt-12.5 lg:mt-15 xl:mt-20">
-            <!-- Features item Start -->
-            <div class="animate_top border border-white shadow-solid-3 rounded-lg p-7.5 xl:p-12.5 transition-all hover:shadow-solid-4 dark:hover:bg-hoverdark dark:border-strokedark dark:bg-blacksection">
-              <div class="flex items-center justify-center rounded-[4px] bg-primary w-16 h-16">
-                <img src="./images/icon/icon-01.svg" alt="Icon" />
-              </div>
-              <h3 class="font-semibold text-xl xl:text-itemtitle text-black dark:text-white mt-7.5 mb-5">Bookkeeping Services</h3>
-              <p>Keeping your financial records in order is essential for making informed business decisions. Our expert bookkeepers are here to ensure that your financial data is accurate, up-to-date, and compliant with all relevant regulations. With our bookkeeping services, you can focus on growing your business while we handle the numbers.
-              </p>
-            </div>
-            <!-- Features item End -->
-
-            <!-- Features item Start -->
-            <div class="animate_top border border-white shadow-solid-3 rounded-lg p-7.5 xl:p-12.5 transition-all hover:shadow-solid-4 dark:hover:bg-hoverdark dark:border-strokedark dark:bg-blacksection">
-              <div class="flex items-center justify-center rounded-[4px] bg-primary w-16 h-16">
-                <img src="./images/icon/icon-02.svg" alt="Icon" />
-              </div>
-              <h3 class="font-semibold text-xl xl:text-itemtitle text-black dark:text-white mt-7.5 mb-5">Data Entry Services</h3>
-              <p>Data is the lifeblood of any organization. Whether it's organizing customer information, processing orders, or updating databases, our skilled data entry specialists are meticulous and efficient. We'll help you manage your data seamlessly, reducing errors and saving you valuable time.
-              </p>
-            </div>
-            <!-- Features item End -->
-
-            <!-- Features item Start -->
-            <div class="animate_top border border-white shadow-solid-3 rounded-lg p-7.5 xl:p-12.5 transition-all hover:shadow-solid-4 dark:hover:bg-hoverdark dark:border-strokedark dark:bg-blacksection">
-              <div class="flex items-center justify-center rounded-[4px] bg-primary w-16 h-16">
-                <img src="./images/icon/icon-03.svg" alt="Icon" />
-              </div>
-              <h3 class="font-semibold text-xl xl:text-itemtitle text-black dark:text-white mt-7.5 mb-5">Virtual Customer care</h3>
-              <p>Exceptional customer service is a cornerstone of success. Our virtual customer care team is ready to provide your customers with a professional and friendly experience. We offer multi-channel support, including email, chat, and phone, ensuring your customers' inquiries and concerns are addressed promptly and with care.
-              </p>
-            </div>
-            <!-- Features item End -->
-
-            <!-- Features item Start -->
-            <!--<div class="animate_top border border-white shadow-solid-3 rounded-lg p-7.5 xl:p-12.5 transition-all hover:shadow-solid-4 dark:hover:bg-hoverdark dark:border-strokedark dark:bg-blacksection">
-              <div class="flex items-center justify-center rounded-[4px] bg-primary w-16 h-16">
-                <img src="./images/icon/icon-04.svg" alt="Icon" />
-              </div>
-              <h3 class="font-semibold text-xl xl:text-itemtitle text-black dark:text-white mt-7.5 mb-5">Speed Optimized</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-            </div>-->
-            <!-- Features item End -->
-
-            <!-- Features item Start -->
-            <!--<div class="animate_top border border-white shadow-solid-3 rounded-lg p-7.5 xl:p-12.5 transition-all hover:shadow-solid-4 dark:hover:bg-hoverdark dark:border-strokedark dark:bg-blacksection">
-              <div class="flex items-center justify-center rounded-[4px] bg-primary w-16 h-16">
-                <img src="./images/icon/icon-05.svg" alt="Icon" />
-              </div>
-              <h3 class="font-semibold text-xl xl:text-itemtitle text-black dark:text-white mt-7.5 mb-5">Fully Customizable</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-            </div>-->
-            <!-- Features item End -->
-
-            <!-- Features item Start -->
-           <!-- <div class="animate_top border border-white shadow-solid-3 rounded-lg p-7.5 xl:p-12.5 transition-all hover:shadow-solid-4 dark:hover:bg-hoverdark dark:border-strokedark dark:bg-blacksection">
-              <div class="flex items-center justify-center rounded-[4px] bg-primary w-16 h-16">
-                <img src="./images/icon/icon-06.svg" alt="Icon" />
-              </div>
-              <h3 class="font-semibold text-xl xl:text-itemtitle text-black dark:text-white mt-7.5 mb-5">Regular Updates</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-            </div>-->
-            <!-- Features item End -->
-          </div>
+          <h3 class="font-semibold text-xl xl:text-itemtitle text-black dark:text-white mt-7.5 mb-5">Bookkeeping Services</h3>
+          <p>Keeping your financial records in order is essential for making informed business decisions. Our expert bookkeepers
+            are here to ensure that your financial data is accurate, up-to-date, and compliant with all relevant regulations.
+            With our bookkeeping services, you can focus on growing your business while we handle the numbers.
+          </p>
         </div>
-      </section>
+        <!-- Features item End -->
+
+        <!-- Features item Start -->
+        <div class="animate_top border border-white shadow-solid-3 rounded-lg p-7.5 xl:p-12.5 transition-all hover:shadow-solid-4 dark:hover:bg-hoverdark dark:border-strokedark dark:bg-blacksection">
+          <div class="flex items-center justify-center rounded-[4px] bg-primary w-16 h-16">
+            <img src="./images/icon/icon-02.svg" alt="Icon"/>
+          </div>
+          <h3 class="font-semibold text-xl xl:text-itemtitle text-black dark:text-white mt-7.5 mb-5">Data Entry Services</h3>
+          <p>Data is the lifeblood of any organization. Whether it's organizing customer information, processing orders, or
+            updating databases, our skilled data entry specialists are meticulous and efficient. We'll help you manage your data
+            seamlessly, reducing errors and saving you valuable time.
+          </p>
+        </div>
+        <!-- Features item End -->
+
+        <!-- Features item Start -->
+        <div class="animate_top border border-white shadow-solid-3 rounded-lg p-7.5 xl:p-12.5 transition-all hover:shadow-solid-4 dark:hover:bg-hoverdark dark:border-strokedark dark:bg-blacksection">
+          <div class="flex items-center justify-center rounded-[4px] bg-primary w-16 h-16">
+            <img src="./images/icon/icon-03.svg" alt="Icon"/>
+          </div>
+          <h3 class="font-semibold text-xl xl:text-itemtitle text-black dark:text-white mt-7.5 mb-5">Virtual Customer care</h3>
+          <p>Exceptional customer service is a cornerstone of success. Our virtual customer care team is ready to provide your
+            customers with a professional and friendly experience. We offer multi-channel support, including email, chat, and
+            phone, ensuring your customers' inquiries and concerns are addressed promptly and with care.
+          </p>
+        </div>
+        <!-- Features item End -->
+
+        <!-- Features item Start -->
+        <!--<div class="animate_top border border-white shadow-solid-3 rounded-lg p-7.5 xl:p-12.5 transition-all hover:shadow-solid-4 dark:hover:bg-hoverdark dark:border-strokedark dark:bg-blacksection">
+          <div class="flex items-center justify-center rounded-[4px] bg-primary w-16 h-16">
+            <img src="./images/icon/icon-04.svg" alt="Icon" />
+          </div>
+          <h3 class="font-semibold text-xl xl:text-itemtitle text-black dark:text-white mt-7.5 mb-5">Speed Optimized</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+        </div>-->
+        <!-- Features item End -->
+
+        <!-- Features item Start -->
+        <!--<div class="animate_top border border-white shadow-solid-3 rounded-lg p-7.5 xl:p-12.5 transition-all hover:shadow-solid-4 dark:hover:bg-hoverdark dark:border-strokedark dark:bg-blacksection">
+          <div class="flex items-center justify-center rounded-[4px] bg-primary w-16 h-16">
+            <img src="./images/icon/icon-05.svg" alt="Icon" />
+          </div>
+          <h3 class="font-semibold text-xl xl:text-itemtitle text-black dark:text-white mt-7.5 mb-5">Fully Customizable</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+        </div>-->
+        <!-- Features item End -->
+
+        <!-- Features item Start -->
+        <!-- <div class="animate_top border border-white shadow-solid-3 rounded-lg p-7.5 xl:p-12.5 transition-all hover:shadow-solid-4 dark:hover:bg-hoverdark dark:border-strokedark dark:bg-blacksection">
+           <div class="flex items-center justify-center rounded-[4px] bg-primary w-16 h-16">
+             <img src="./images/icon/icon-06.svg" alt="Icon" />
+           </div>
+           <h3 class="font-semibold text-xl xl:text-itemtitle text-black dark:text-white mt-7.5 mb-5">Regular Updates</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+         </div>-->
+        <!-- Features item End -->
+      </div>
+    </div>
+  </section>
       <!-- ===== Features End ===== -->
 
-      <!-- ===== About Start ===== -->
-      <section class="pb-20 lg:pb-25 xl:pb-30 overflow-hidden">
-        <div class="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
-          <div class="flex items-center gap-8 lg:gap-32.5">
-            <div class="animate_left hidden md:block md:w-1/2">
-              <img src="./images/about/about-light-01.svg" alt="About" class="dark:hidden" />
-              <img src="./images/about/about-dark-01.svg" alt="About" class="hidden dark:block" />
-            </div>
-            <div class="animate_right md:w-1/2">
-              <h4 class="text-black dark:text-white font-medium uppercase">
-                <a href="#" class="bg-meta text-white text-metatitle inline-flex rounded-full py-1 px-4.5 mr-4 mb-4">New</a> Start tracking your success journey today
-              </h4>
-              <h2 class="relative font-bold text-black dark:text-white text-3xl xl:text-hero mb-6">
-                Know More About Our
-                <span class="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">Services.</span>
-              </h2>
-              <p>Dive deeper into the world of Your Remote Business Solutions and discover how our services can transform your business. </p>
+  <!-- ===== About Start ===== -->
+  <section id="about" class="pb-20 lg:pb-25 xl:pb-30 overflow-hidden">
+    <div class="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
+      <div class="flex items-center gap-8 lg:gap-32.5">
+        <div class="animate_left hidden md:block md:w-1/2">
+          <img src="./images/about/about-light-01.svg" alt="About" class="dark:hidden"/>
+          <img src="./images/about/about-dark-01.svg" alt="About" class="hidden dark:block"/>
+        </div>
+        <div class="animate_right md:w-1/2">
+          <h4 class="text-black dark:text-white font-medium uppercase">
+            about us
+          </h4>
+          <h2 class="relative font-bold  text-black dark:text-white text-3xl xl:text-hero mb-6">
+            Who We Are
+            <span class="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1"></span>
+          </h2>
+          <!--                    <p>Welcome to FORT Remote, your trusted-->
+          <!--                        partner for remote business support-->
+          <!--                        services. </p>-->
 
-              <div class="mt-7.5 flex items-center gap-5">
-                <div class="w-15 h-15 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">
-                  <p class="text-black dark:text-white font-semibold text-metatitle2">01</p>
-                </div>
-                <div class="w-3/4">
-                  <h5 class="text-black dark:text-white text-metatitle2 mb-0.5">Exceeding Expectations.</h5>
-                  <p>Discover how we optimize your operations for peak efficiency.</p>
-                </div>
-              </div>
-              <div class="mt-7.5 flex items-center gap-5">
-                <div class="w-15 h-15 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">
-                  <p class="text-black dark:text-white font-semibold text-metatitle2">02</p>
-                </div>
-                <div class="w-3/4">
-                  <h5 class="text-black dark:text-white text-metatitle2 mb-0.5">Tailored to Your Needs</h5>
-                  <p>Explore how we deliver exceptional customer care experiences</p>
-                </div>
-              </div>
+          <div class="mt-7.5 flex items-center gap-5">
+            <!--                        <div class="w-15 h-15 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">-->
+            <!--                            <p class="text-black dark:text-white font-semibold text-metatitle2">01</p>-->
+            <!--                        </div>-->
+            <div class="w-3/4">
+              <!--                            <h5 class="text-black dark:text-white text-metatitle2 mb-0.5">Cost-Effective Solutions</h5>&ndash;&gt;-->
+              <p>Welcome to FORT Remote, your trusted
+                partner for remote business support
+                services. With a strong commitment to
+                excellence and a team of dedicated
+                professionals, we have been helping
+                businesses worldwide streamline their
+                operations and enhance their efficiency
+                since for over ten years.</p>
             </div>
           </div>
+          <!--                    <div class="mt-7.5 flex items-center gap-5">-->
+          <!--                        <div class="w-15 h-15 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">-->
+          <!--                            <p class="text-black dark:text-white font-semibold text-metatitle2">02</p>-->
+          <!--                        </div>-->
+          <!--                        <div class="w-3/4">-->
+          <!--                            <h5 class="text-black dark:text-white text-metatitle2 mb-0.5">Cost-Effective Solutions</h5>-->
+          <!--                            <p>Outsource for cost savings, pay only for needed remote services.</p>-->
+          <!--                        </div>-->
+          <!--                    </div>-->
         </div>
-      </section>
-      <!-- ===== About End ===== -->
+      </div>
+    </div>
+  </section>
+  <!-- ===== About End ===== -->
+  <!-- ===== Our Story Start ===== -->
+  <section class="pb-20 lg:pb-25 xl:pb-30 overflow-hidden">
+    <div class="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
+      <div class="flex items-center gap-8 lg:gap-32.5">
+        <div class="animate_right md:w-1/2">
+          <h4 class="text-black dark:text-white font-medium uppercase">
+            Our Journey
+          </h4>
+          <h2 class="relative font-bold  text-black dark:text-white text-3xl xl:text-hero mb-6">
+            Our  <span class="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">Story</span>
+            <span class="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1"></span>
+          </h2>
+          <!--                    <p>Welcome to FORT Remote, your trusted-->
+          <!--                        partner for remote business support-->
+          <!--                        services. </p>-->
 
-      <!-- ===== About Two Start ===== -->
-      <section>
-        <div class="mx-auto max-w-c-1235 px-4 md:px-8 2xl:px-0 overflow-hidden">
-          <div class="flex items-center gap-8 lg:gap-32.5">
-            <div class="animate_left md:w-1/2">
-              <h4 class="text-black dark:text-white font-medium uppercase">grow your business faster</h4>
-              <h2 class="relative font-bold text-black dark:text-white text-3xl xl:text-hero mb-6">
-                Track Your Audience
-                <span class="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">Activities</span>
-              </h2>
-              <p>Gain Insights, Track Engagement, and Improve Customer Interactions with Our Audience Activity Monitoring Services.</p>
-
-              <a href="#" class="flex items-center gap-2.5 text-black dark:text-white mt-7.5">
-                Know More
-                <img class="dark:hidden" src="./images/icon/icon-arrow-light.svg" alt="Arrow" />
-                <img class="hidden dark:block" src="./images/icon/icon-arrow-dark.svg" alt="Arrow" />
-              </a>
-            </div>
-            <div class="animate_right hidden md:block md:w-1/2">
-              <img src="./images/about/about-light-02.svg" alt="About" class="dark:hidden" />
-              <img src="./images/about/about-dark-02.svg" alt="About" class="hidden dark:block" />
+          <div class="mt-7.5 flex items-center gap-5">
+            <!--                        <div class="w-15 h-15 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">-->
+            <!--                            <p class="text-black dark:text-white font-semibold text-metatitle2">01</p>-->
+            <!--                        </div>-->
+            <div class="w-3/4">
+              <!--                            <h5 class="text-black dark:text-white text-metatitle2 mb-0.5">Cost-Effective Solutions</h5>&ndash;&gt;-->
+              <p>FORT Remote was founded with a precise vision -
+                to empower businesses of all sizes with reliable
+                and cost-effective remote support services. We
+                recognized that in an increasingly digital world,
+                companies needed a dependable partner to
+                handle critical tasks like bookkeeping, data entry,
+                and customer care without the need for an
+                in-house team.</p>
             </div>
           </div>
+          <!--                    <div class="mt-7.5 flex items-center gap-5">-->
+          <!--                        <div class="w-15 h-15 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">-->
+          <!--                            <p class="text-black dark:text-white font-semibold text-metatitle2">02</p>-->
+          <!--                        </div>-->
+          <!--                        <div class="w-3/4">-->
+          <!--                            <h5 class="text-black dark:text-white text-metatitle2 mb-0.5">Cost-Effective Solutions</h5>-->
+          <!--                            <p>Outsource for cost savings, pay only for needed remote services.</p>-->
+          <!--                        </div>-->
+          <!--                    </div>-->
         </div>
-      </section>
-      <!-- ===== About Two End ===== -->
+        <div class="animate_left hidden md:block md:w-1/2">
+          <img src="./images/about/about-light-01.svg" alt="About" class="dark:hidden"/>
+          <img src="./images/about/about-dark-01.svg" alt="About" class="hidden dark:block"/>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Our Story End ===== -->
+
+  <!-- ===== Mission Start ===== -->
+  <section class="pb-20 lg:pb-25 xl:pb-30 overflow-hidden">
+    <div class="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
+      <div class="flex items-center gap-8 lg:gap-32.5">
+        <div class="animate_left hidden md:block md:w-1/2">
+          <img src="./images/about/about-light-01.svg" alt="About" class="dark:hidden"/>
+          <img src="./images/about/about-dark-01.svg" alt="About" class="hidden dark:block"/>
+        </div>
+        <div class="animate_right md:w-1/2">
+          <h4 class="text-black dark:text-white font-medium uppercase">
+            Our Purpose
+          </h4>
+          <h2 class="relative font-bold  text-black dark:text-white text-3xl xl:text-hero mb-6">
+            Our Mission
+            <span class="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1"></span>
+          </h2>
+          <!--                    <p>Welcome to FORT Remote, your trusted-->
+          <!--                        partner for remote business support-->
+          <!--                        services. </p>-->
+
+          <div class="mt-7.5 flex items-center gap-5">
+            <!--                        <div class="w-15 h-15 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">-->
+            <!--                            <p class="text-black dark:text-white font-semibold text-metatitle2">01</p>-->
+            <!--                        </div>-->
+            <div class="w-3/4">
+              <!--                            <h5 class="text-black dark:text-white text-metatitle2 mb-0.5">Cost-Effective Solutions</h5>&ndash;&gt;-->
+              <p>Our mission is simple yet profound: To
+                enable businesses to thrive in the
+                digital age by providing exceptional
+                remote tools and expertise they need
+                to excel in their respective industries.
+
+                We believe that success is built on a
+                foundation of efficiency, accuracy, and
+                outstanding customer experiences.
+
+                We are committed to delivering
+                exceptional services that free our clients
+                from administrative burdens and allow
+                them to focus on growth and innovation.
+
+                We are driven by this mission every day,
+                and it guides everything we do.</p>
+            </div>
+          </div>
+          <!--                    <div class="mt-7.5 flex items-center gap-5">-->
+          <!--                        <div class="w-15 h-15 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">-->
+          <!--                            <p class="text-black dark:text-white font-semibold text-metatitle2">02</p>-->
+          <!--                        </div>-->
+          <!--                        <div class="w-3/4">-->
+          <!--                            <h5 class="text-black dark:text-white text-metatitle2 mb-0.5">Cost-Effective Solutions</h5>-->
+          <!--                            <p>Outsource for cost savings, pay only for needed remote services.</p>-->
+          <!--                        </div>-->
+          <!--                    </div>-->
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ===== Mission End ===== -->
 
       <!-- ===== Features Tab Start ===== -->
       <FeatureTabs client:only="vue" />
       <!-- ===== Features Tab End ===== -->
 
-      <!-- ===== Funfact Start ===== -->
-      <section class="py-20 lg:py-22.5 px-4 md:px-8 2xl:px-0">
-        <div
-          class="mx-auto max-w-c-1390 py-22.5 xl:py-27.5 relative z-1 rounded-lg bg-gradient-to-t from-[#F8F9FF] to-[#DEE7FF] dark:bg-gradient-to-t dark:from-transparent dark:to-transparent dark:bg-blacksection dark:stroke-strokedark"
-        >
-          <img src="./images/shape/shape-04.svg" alt="Man" class="absolute -top-25 -left-15 lg:left-0 -z-1" />
-          <img src="./images/shape/shape-05.svg" alt="Doodle" class="absolute bottom-0 right-0 -z-1" />
-          <img src="./images/shape/shape-dotted-light-02.svg" alt="Dotted" class="absolute top-0 left-0 -z-1 dark:hidden" />
-          <img src="./images/shape/shape-dotted-dark-02.svg" alt="Dotted" class="absolute top-0 left-0 -z-1 hidden dark:block" />
+  <!-- ===== Funfact Start ===== -->
+  <section class="py-20 lg:py-22.5 px-4 md:px-8 2xl:px-0">
+    <div
+        class="mx-auto max-w-c-1390 py-22.5 xl:py-27.5 relative z-1 rounded-lg bg-gradient-to-t from-[#F8F9FF] to-[#DEE7FF] dark:bg-gradient-to-t dark:from-transparent dark:to-transparent dark:bg-blacksection dark:stroke-strokedark"
+    >
+      <!--          <img src="./images/shape/shape-04.svg" alt="Man" class="absolute -top-25 -left-15 lg:left-0 -z-1" />-->
+      <img src="./images/shape/shape-05.svg" alt="Doodle" class="absolute bottom-0 right-0 -z-1"/>
+      <img src="./images/shape/shape-dotted-light-02.svg" alt="Dotted" class="absolute top-0 left-0 -z-1 dark:hidden"/>
+      <img src="./images/shape/shape-dotted-dark-02.svg" alt="Dotted" class="absolute top-0 left-0 -z-1 hidden dark:block"/>
 
-          <div class="animate_top mx-auto text-center md:w-4/5 lg:w-2/3 xl:w-1/2 mb-12.5 lg:mb-17.5 px-4 md:px-0">
-            <h2 class="font-bold text-black dark:text-white text-3xl xl:text-sectiontitle3 mb-4">Global Trust, Local Impact.</h2>
-            <p class="lg:w-11/12 mx-auto">Our unwavering commitment to excellence has earned the trust of countless companies worldwide. With a proven track record of delivering top-notch remote services, we've become the go-to partner for businesses seeking efficiency, quality, and growth. Join the ranks of satisfied clients who rely on our expertise to drive success on a global scale, while experiencing a local impact tailored to your unique needs. Choose Your Remote Business Solutions and elevate your business today.</p>
-          </div>
+      <div class="animate_top mx-auto text-center md:w-4/5 lg:w-2/3 xl:w-1/2 mb-12.5 lg:mb-17.5 px-4 md:px-0">
+        <h2 class="font-bold text-black dark:text-white text-3xl xl:text-sectiontitle3 mb-4">Global Trust, Local Impact.</h2>
+        <p class="lg:w-11/12 mx-auto">"With a global track record of excellence, we're the trusted partner for efficient,
+          quality-driven remote services. Join satisfied clients and elevate your business with Your Remote Business
+          Solutions..</p>
+      </div>
 
-          <div class="flex flex-wrap justify-center gap-8 lg:gap-42.5">
-            <div class="animate_top text-center">
-              <h3 class="font-bold text-black dark:text-white text-3xl xl:text-sectiontitle3 mb-2.5">500K</h3>
-              <p class="text-lg lg:text-para2">World Wide Clients</p>
-            </div>
-            <div class="animate_top text-center">
-              <h3 class="font-bold text-black dark:text-white text-3xl xl:text-sectiontitle3 mb-2.5">1M+</h3>
-              <p class="text-lg lg:text-para2">Downloads</p>
-            </div>
-            <div class="animate_top text-center">
-              <h3 class="font-bold text-black dark:text-white text-3xl xl:text-sectiontitle3 mb-2.5">865</h3>
-              <p class="text-lg lg:text-para2">Winning Award</p>
-            </div>
+      <div class="flex flex-wrap justify-center gap-8 lg:gap-42.5">
+        <div class="animate_top text-center">
+          <h3 class="font-bold text-black dark:text-white text-3xl xl:text-sectiontitle3 mb-2.5">500K</h3>
+          <p class="text-lg lg:text-para2">World Wide Clients</p>
+        </div>
+        <div class="animate_top text-center">
+          <h3 class="font-bold text-black dark:text-white text-3xl xl:text-sectiontitle3 mb-2.5">1M+</h3>
+          <p class="text-lg lg:text-para2">Downloads</p>
+        </div>
+        <div class="animate_top text-center">
+          <h3 class="font-bold text-black dark:text-white text-3xl xl:text-sectiontitle3 mb-2.5">865</h3>
+          <p class="text-lg lg:text-para2">Winning Award</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Funfact End ===== -->
+
+
+  <!-- ===== Integrations Start ===== -->
+  <section>
+    <div class="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
+      <!-- Section Title Start -->
+      <div class="animate_top text-center mx-auto " >
+
+        <div class="bg-zumthor dark:bg-blacksection dark:border dark:border-strokedark inline-block rounded-full py-1.5 px-4.5 mb-4">
+          <h4  class="font-medium text-sectiontitle text-black dark:text-white">OUR TOOLS</h4>
+        </div>
+        <h2 class="font-bold text-3xl xl:text-sectiontitle3 text-black dark:text-white md:w-4/5 xl:w-1/2 mx-auto mb-4">Our Tool Stack</h2>
+        <p class="mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%]" >Are you in need of efficient and reliable remote bookkeeping and data entry services? Look no further! Our team of skilled professionals is equipped with a powerful tool stack to handle all your financial and data management needs. We understand the importance of accuracy, security, and efficiency in bookkeeping and data entry, and that's why we've carefully curated our tool stack to ensure we meet and exceed your expectations. Here's an overview of the tools we use to provide top-notch services.</p>
+      </div>
+      <!-- Section Title End -->
+    </div>
+
+    <div class="mx-auto max-w-c-1154 px-4 md:px-8 xl:px-0 relative z-50 mt-15 xl:mt-20">
+      <div class="absolute -top-3/4 -z-1">
+        <img src="./images/shape/shape-dotted-light.svg" alt="Dotted" class="dark:hidden"/>
+        <img src="./images/shape/shape-dotted-dark.svg" alt="Dotted" class="hidden dark:block"/>
+      </div>
+      <div class="flex flex-wrap gap-y-10 justify-around">
+        <div class="animate_top w-1/6">
+          <div class="inline-block rounded-[10px] shadow-solid-7 bg-white dark:bg-btndark p-4.5">
+            <img class="h-16" src="./images/brand/quickbooks-2.svg" alt="Brand"/>
           </div>
         </div>
-      </section>
-      <!-- ===== Funfact End ===== -->
 
-      <!-- ===== Integrations Start ===== -->
-      <section>
-        <div class="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
-          <!-- Section Title Start -->
-          <div
-            class="animate_top text-center mx-auto"
-          >
-            <div class="bg-zumthor dark:bg-blacksection dark:border dark:border-strokedark inline-block rounded-full py-1.5 px-4.5 mb-4">
-              <h4 class="font-medium text-sectiontitle text-black dark:text-white">INTEGRATIONS</h4>
-            </div>
-            <h2 class="font-bold text-3xl xl:text-sectiontitle3 text-black dark:text-white md:w-4/5 xl:w-1/2 mx-auto mb-4">Seamless Remote Data Management.</h2>
-            <p class="mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%]">
-              Experience the freedom to securely maintain and access your data remotely, at your convenience, from anywhere in the world. With our expert data management solutions, you're always in control, ensuring your business runs smoothly, no matter where you are.
-            </p>
-          </div>
-          <!-- Section Title End -->
-        </div>
+        <div class="animate_top w-1/6"></div>
 
-        <div class="mx-auto max-w-c-1154 px-4 md:px-8 xl:px-0 relative z-50 mt-15 xl:mt-20">
-          <div class="absolute -top-3/4 -z-1">
-            <img src="./images/shape/shape-dotted-light.svg" alt="Dotted" class="dark:hidden" />
-            <img src="./images/shape/shape-dotted-dark.svg" alt="Dotted" class="hidden dark:block" />
-          </div>
-          <div class="flex flex-wrap gap-y-10 justify-around">
-            <div class="animate_top w-1/6">
-              <div class="inline-block rounded-[10px] shadow-solid-7 bg-white dark:bg-btndark p-4.5">
-                <img src="./images/brand/brand-07.svg" alt="Brand" />
-              </div>
-            </div>
-
-            <div class="animate_top w-1/6"></div>
-
-            <div class="animate_top w-1/6">
-              <div class="inline-block rounded-[10px] shadow-solid-7 bg-white dark:bg-btndark p-4.5">
-                <img src="./images/brand/brand-08.svg" alt="Brand" />
-              </div>
-            </div>
-
-            <div class="animate_top w-1/6">
-              <div class="bg-[#FFDB26] rounded-full w-[11px] h-[11px]"></div>
-            </div>
-
-            <div class="animate_top w-1/6">
-              <div class="inline-block rounded-[10px] shadow-solid-7 bg-white dark:bg-btndark p-4.5">
-                <img src="./images/brand/brand-09.svg" alt="Brand" />
-              </div>
-            </div>
-
-            <div class="animate_top w-1/6"></div>
-
-            <div class="animate_top w-1/6">
-              <div class="bg-[#62E888] rounded-full w-[15px] h-[15px]"></div>
-            </div>
-
-            <div class="animate_top w-1/6">
-              <div class="inline-block rounded-[10px] shadow-solid-7 bg-white dark:bg-btndark p-4.5">
-                <img src="./images/brand/brand-10.svg" alt="Brand" />
-              </div>
-            </div>
-
-            <div class="animate_top w-1/6">
-              <div class="bg-[#EF5C00] rounded-full w-[23px] h-[23px]"></div>
-            </div>
-
-            <div class="animate_top w-1/6">
-              <div class="inline-block rounded-[10px] shadow-solid-7 bg-white dark:bg-btndark p-4.5">
-                <img src="./images/brand/brand-11.svg" alt="Brand" />
-              </div>
-            </div>
-
-            <div class="animate_top w-1/6">
-              <div class="bg-[#016BFF] rounded-full w-[15px] h-[15px]"></div>
-            </div>
-
-            <div class="animate_top w-1/6">
-              <div class="inline-block rounded-[10px] shadow-solid-7 bg-white dark:bg-btndark p-4.5">
-                <img src="./images/brand/brand-12.svg" alt="Brand" />
-              </div>
-            </div>
+        <div class="animate_top w-1/6">
+          <div class="inline-block rounded-[10px] shadow-solid-7 bg-white dark:bg-btndark p-4.5">
+            <img class="h-16" src="./images/brand/vue-9.svg" alt="Brand"/>
           </div>
         </div>
-      </section>
+
+        <div class="animate_top w-1/6">
+          <div class="bg-[#FFDB26] rounded-full w-[11px] h-[11px]"></div>
+        </div>
+
+        <div class="animate_top w-1/6">
+          <div class="inline-block rounded-[10px] shadow-solid-7 bg-white dark:bg-btndark p-4.5">
+            <img class="h-16" src="./images/brand/mysql-logo.svg" alt="Brand"/>
+          </div>
+        </div>
+
+        <div class="animate_top w-1/6"></div>
+
+        <div class="animate_top w-1/6">
+          <div class="bg-[#62E888] rounded-full w-[15px] h-[15px]"></div>
+        </div>
+
+        <div class="animate_top w-1/6">
+          <div class="inline-block rounded-[10px] shadow-solid-7 bg-white dark:bg-btndark p-4.5">
+            <img class="h-16" src="./images/brand/laravel-2.svg" alt="Brand"/>
+          </div>
+        </div>
+
+        <div class="animate_top w-1/6">
+          <div class="bg-[#EF5C00] rounded-full w-[23px] h-[23px]"></div>
+        </div>
+
+        <div class="animate_top w-1/6">
+          <div class="inline-block rounded-[10px] shadow-solid-7 bg-white dark:bg-btndark p-4.5">
+            <img class="h-16" src="./images/brand/excel-4.svg" alt="Brand"/>
+          </div>
+        </div>
+
+        <div class="animate_top w-1/6">
+          <div class="bg-[#016BFF] rounded-full w-[15px] h-[15px]"></div>
+        </div>
+
+        <div class="animate_top w-1/6">
+          <div class="inline-block rounded-[10px] shadow-solid-7 bg-white dark:bg-btndark p-4.5">
+            <img class="w-40" src="./images/brand/clickup.svg" alt="Brand"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
       <!-- ===== Integrations End ===== -->
 
       <!-- ===== CTA Start ===== -->

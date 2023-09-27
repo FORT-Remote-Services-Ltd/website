@@ -4,257 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed3ffb38-9f89-40ec-8eea-0d3ad04be9fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Faq.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FeatureTabs.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Testimonials.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SolidTailwindMain.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/blog-grid.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/blog-single.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/404.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/about-dark-01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/about-dark-02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/about-light-01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/about-light-02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/blog-01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/blog-02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/blog-03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/blog-04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/blog-05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/blog-big.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/blog-small-01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/brand-07.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/brand-08.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/brand-09.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/brand-10.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/brand-11.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/brand-12.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/brand-dark-01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/brand-dark-02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/brand-dark-03.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/brand-dark-04.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/brand-dark-05.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/brand-dark-06.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/brand-light-01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/brand-light-02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/brand-light-03.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/brand-light-04.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/brand-light-05.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/brand-light-06.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/features-dark-01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/features-light-01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/hero-dark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/hero-light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/icon-01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/icon-02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/icon-03.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/icon-04.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/icon-05.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/icon-06.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/icon-arrow-dark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/icon-arrow-light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/icon-minus-dark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/icon-minus-light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/icon-moon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/icon-plus-dark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/icon-plus-light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/icon-sun.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/logo-dark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/logo-light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/shape-01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/shape-02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/shape-03.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/shape-04.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/shape-05.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/shape-06.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/shape-dotted-dark-02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/shape-dotted-dark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/shape-dotted-light-02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/shape-dotted-light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/user-01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/images/user-02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/signin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/signup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/blog-grid.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/blog-single.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/fonts/Incly-Icon.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/fonts/Incly-Icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/fonts/Incly-Icon.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/fonts/Incly-Icon.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/about/about-dark-01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/about/about-dark-02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/about/about-light-01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/about/about-light-02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/blog/blog-01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/blog/blog-02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/blog/blog-03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/blog/blog-04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/blog/blog-05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/blog/blog-big.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/blog/blog-small-01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/blog/blog-small-02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/blog/blog-small-03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/brand/brand-07.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/brand/brand-08.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/brand/brand-09.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/brand/brand-10.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/brand/brand-11.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/brand/brand-12.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/brand/brand-dark-01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/brand/brand-dark-02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/brand/brand-dark-03.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/brand/brand-dark-04.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/brand/brand-dark-05.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/brand/brand-dark-06.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/brand/brand-light-01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/brand/brand-light-02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/brand/brand-light-03.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/brand/brand-light-04.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/brand/brand-light-05.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/brand/brand-light-06.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/features/features-dark-01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/features/features-light-01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/hero/hero-dark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/hero/hero-light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/icon/icon-01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/icon/icon-02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/icon/icon-03.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/icon/icon-04.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/icon/icon-05.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/icon/icon-06.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/icon/icon-arrow-dark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/icon/icon-arrow-light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/icon/icon-minus-dark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/icon/icon-minus-light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/icon/icon-moon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/icon/icon-plus-dark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/icon/icon-plus-light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/icon/icon-sun.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/logo/logo-dark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/logo/logo-light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/shape/404.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/shape/shape-01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/shape/shape-02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/shape/shape-03.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/shape/shape-04.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/shape/shape-05.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/shape/shape-06.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/shape/shape-dotted-dark-02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/shape/shape-dotted-dark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/shape/shape-dotted-light-02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/shape/shape-dotted-light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/user/user-01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/images/user/user-02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/js/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/partials/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/partials/header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/partials/lines.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/partials/scrolltop.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/partials/section-title.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/signin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-prefix/signup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/about-us.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blog-grid.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blog-single.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/about/about-dark-01.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/about/about-dark-01.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/about/about-dark-02.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/about/about-dark-02.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/about/about-light-01.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/about/about-light-01.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/about/about-light-02.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/about/about-light-02.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/blog/blog-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/blog/blog-01.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/blog/blog-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/blog/blog-02.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/blog/blog-03.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/blog/blog-03.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/blog/blog-04.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/blog/blog-04.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/blog/blog-05.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/blog/blog-05.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/blog/blog-big.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/blog/blog-big.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/blog/blog-small-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/blog/blog-small-01.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/blog/blog-small-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/blog/blog-small-02.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/blog/blog-small-03.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/blog/blog-small-03.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/brand/brand-07.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/brand-07.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/brand/brand-08.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/brand-08.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/brand/brand-09.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/brand-09.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/brand/brand-10.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/brand-10.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/brand/brand-11.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/brand-11.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/brand/brand-12.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/brand-12.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/brand/brand-dark-01.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/brand-dark-01.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/brand/brand-dark-02.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/brand-dark-02.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/brand/brand-dark-03.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/brand-dark-03.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/brand/brand-dark-04.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/brand-dark-04.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/brand/brand-dark-05.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/brand-dark-05.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/brand/brand-dark-06.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/brand-dark-06.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/brand/brand-light-01.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/brand-light-01.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/brand/brand-light-02.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/brand-light-02.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/brand/brand-light-03.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/brand-light-03.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/brand/brand-light-04.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/brand-light-04.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/brand/brand-light-05.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/brand-light-05.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/brand/brand-light-06.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/brand/brand-light-06.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/features/features-dark-01.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/features/features-dark-01.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/features/features-light-01.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/features/features-light-01.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero/hero-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/hero/hero-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hero/hero-light.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/hero/hero-light.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon/icon-01.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/icon/icon-01.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon/icon-02.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/icon/icon-02.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon/icon-03.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/icon/icon-03.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon/icon-04.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/icon/icon-04.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon/icon-05.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/icon/icon-05.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon/icon-06.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/icon/icon-06.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon/icon-arrow-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/icon/icon-arrow-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon/icon-arrow-light.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/icon/icon-arrow-light.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon/icon-minus-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/icon/icon-minus-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon/icon-minus-light.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/icon/icon-minus-light.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon/icon-moon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/icon/icon-moon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon/icon-plus-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/icon/icon-plus-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon/icon-plus-light.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/icon/icon-plus-light.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon/icon-sun.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/icon/icon-sun.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo/logo-dark-back.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo/logo-dark-back.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo/logo-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo/logo-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo/logo-light.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo/logo-light.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/shape/404.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/shape/404.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/shape/shape-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/shape/shape-01.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/shape/shape-02.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/shape/shape-02.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/shape/shape-03.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/shape/shape-03.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/shape/shape-04.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/shape/shape-04.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/shape/shape-05.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/shape/shape-05.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/shape/shape-06.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/shape/shape-06.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/shape/shape-dotted-dark-02.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/shape/shape-dotted-dark-02.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/shape/shape-dotted-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/shape/shape-dotted-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/shape/shape-dotted-light-02.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/shape/shape-dotted-light-02.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/shape/shape-dotted-light.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/shape/shape-dotted-light.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/user/user-01.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/user/user-01.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/user/user-02.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/user/user-02.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/lines.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/scrolltop.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/section-title.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/signin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/signup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" />
+    <list default="true" id="78e82238-666d-4316-8d9c-2a6e5481572a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/brand/clickup.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brand/excel-4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brand/laravel-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brand/mysql-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brand/quickbooks-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/brand/vue-9.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,64 +22,97 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Astro Component" />
-        <option value="Vue Composition API Component" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2VifA726389Vleqos71dRsMXe4k" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2VgoXHuLrRh70bT2A4G8fZ2p16L" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
-    <option name="autoscrollFromSource" value="true" />
-    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/moseskamau/code/playground/fort-site/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Users/moseskamau/Library/Application Support/JetBrains/Toolbox/apps/PhpStorm/ch-0/231.9225.18/PhpStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Makefile",
+      "Vue"
     ]
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Fort\src\images\brand" />
     </key>
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="astro" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="astro" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.astro" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ed3ffb38-9f89-40ec-8eea-0d3ad04be9fa" name="Changes" comment="" />
-      <created>1695323674942</created>
+      <changelist id="78e82238-666d-4316-8d9c-2a6e5481572a" name="Changes" comment="" />
+      <created>1695267121587</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1695323674942</updated>
-      <workItem from="1695323676409" duration="3115000" />
-      <workItem from="1695358956897" duration="4537000" />
-      <workItem from="1695541832829" duration="12187000" />
+      <updated>1695267121587</updated>
+      <workItem from="1695267122655" duration="1926000" />
+      <workItem from="1695291126367" duration="1415000" />
+      <workItem from="1695532045723" duration="9090000" />
+      <workItem from="1695761659796" duration="348000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

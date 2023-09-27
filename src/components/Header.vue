@@ -1,5 +1,10 @@
 <script setup>
+
+
 import {ref, onMounted, onUnmounted} from "vue";
+
+
+
 
 const stickyMenu = ref(false)
 const navigationOpen = ref(false)
@@ -7,6 +12,8 @@ const active_dropdowns = ref([])
 function handleScroll(e){
   stickyMenu.value = window.pageYOffset > 20;
 }
+//modal
+
 // Add scroll event listener when the component is mounted
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
@@ -53,10 +60,10 @@ handleScroll();
         <nav>
           <ul class="flex lg:items-center flex-col lg:flex-row gap-5 lg:gap-10">
             <li><a href="/" class="hover:text-primary">Home</a></li>
-            <li><a href="/#features" class="hover:text-primary">Services</a></li>
+            <li><a href="/services" class="hover:text-primary">Services</a></li>
             <li><a href="blog-grid" class="hover:text-primary">Our Blog</a></li>
             <li><a href="about-us" class="hover:text-primary">About Us</a></li>
-            <li><a href="contact" class="hover:text-primary">Contact Us</a></li>
+            <li><a href="/contact" class="hover:text-primary">Contact Us</a></li>
             <!--<li class="group relative">-->
             <!--  <a-->
             <!--    href="#"-->
@@ -95,7 +102,10 @@ handleScroll();
           <!--  </label>-->
           <!--</div>-->
 
-          <a href="#" class="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-2.5 px-7.5">Get Quote</a>
+          <button @click="showModal">
+
+        <a href="#"  class="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-2.5 px-7.5">Get Quote</a>
+          </button>
         </div>
       </div>
     </div>

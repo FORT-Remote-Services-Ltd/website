@@ -28,6 +28,7 @@ handleScroll();
 </script>
 
 <template>
+
   <header
     class="fixed left-0 top-0 w-full z-99999 py-7"
     :class="{ 'bg-white dark:bg-black shadow !py-4 transition duration-100' : stickyMenu }">

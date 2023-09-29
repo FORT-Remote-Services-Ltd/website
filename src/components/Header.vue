@@ -80,9 +80,9 @@ handleScroll();
 
         <a href="#"
            :class="[
-               stickyMenu ? 'bg-primary hover:bg-primaryho text-white' : 'border border-primary hover:border-primaryho text-primary',
-             'flex items-center justify-center ease-in-out duration-300 text-regular rounded-full py-2.5 px-7.5'
-           ]">Get Quote</a>
+               stickyMenu ? 'bg-primary hover:bg-primary text-white' : 'border border-primary hover:border-primary  text-primary',
+             'flex items-center justify-center ease-in-out duration-300 text-regular rounded-full py-2.5 px-7.5', ''
+           ]" >Get Quote</a>
           </button>
         </div>
     </div>

@@ -1,35 +1,37 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   darkMode: 'class',
   theme: {
     fontFamily: {
-      inter: ['Inter', 'sans-serif'],
-    },
-    colors: {
-      current: 'currentColor',
-      transparent: 'transparent',
-      stroke: '#EEEEEE',
-      strokedark: '#2D2F40',
-      hoverdark: '#252A42',
-      titlebg: '#ADFFF8',
-      titlebg2: '#FFEAC2',
-      titlebgdark: '#46495A',
-      btndark: '#292E45',
-      white: '#FFFFFF',
-      black: '#181C31',
-      blackho: '#2C3149',
-      blacksection: '#1C2136',
-      primary: '#261132',
-      primaryho: '#3E2F5B',
-      meta: '#20C5A8',
-      waterloo: '#757693',
-      manatee: '#999AA1',
-      alabaster: '#FBFBFB',
-      zumthor: '#EDF5FF',
-      socialicon: '#D1D8E0',
+      inter: ['sans-serif', 'Inter'],
     },
     extend: {
+      colors: {
+        current: 'currentColor',
+        transparent: 'transparent',
+        stroke: '#EEEEEE',
+        strokedark: '#2D2F40',
+        hoverdark: '#252A42',
+        titlebg: '#ADFFF8',
+        titlebg2: '#FFEAC2',
+        titlebgdark: '#46495A',
+        btndark: '#292E45',
+        white: '#FFFFFF',
+        black: '#181C31',
+        blackho: '#2C3149',
+        blacksection: '#1C2136',
+        primary: '#261132',
+        primaryho: '#3E2F5B',
+        meta: '#20C5A8',
+        waterloo: '#757693',
+        manatee: '#999AA1',
+        alabaster: '#FBFBFB',
+        zumthor: '#EDF5FF',
+        socialicon: '#D1D8E0',
+      },
       fontSize: {
         metatitle: ['12px', '20px'],
         sectiontitle: ['14px', '22px'],
@@ -44,6 +46,9 @@ module.exports = {
         sectiontitle2: ['40px', '52px'],
         sectiontitle4: ['34px', '48px'],
       },
+      //fontFamily: {
+      //  'sans': ['Proxima Nova', ...defaultTheme.fontFamily.sans],
+      //},
       spacing: {
         4.5: '1.125rem',
         5.5: '1.375rem',

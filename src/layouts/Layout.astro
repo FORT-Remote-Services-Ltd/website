@@ -15,7 +15,7 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title} | Fort Remote Services</title>
   </head>
-  <body>
+  <body class="bg-slate-100">
     <!-- ===== Bg Lines Start ===== -->
     <div class="fixed top-0 left-0 -z-10 flex h-full w-full items-center justify-around">
 	  <span class="w-[1px] h-full bg-stroke dark:bg-strokedark flex animate-line1"></span>
@@ -48,6 +48,6 @@ const { title } = Astro.props;
 	</button>
     <!-- ====== Back To Top End ===== -->
   </body>
-    <script src="/js/index.js"></script>
+    <script is:inline src="/js/index.js"></script>
 </html>
 

@@ -2,12 +2,12 @@
   <div class="fixed bottom-5 right-5 flex flex-col justify-end">
     <TransitionRoot as="template" :show="open">
       <TransitionChild as="template" enter="ease-out duration-300" enter-from="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" enter-to="opacity-100 translate-y-0 sm:scale-100" leave="ease-in duration-200" leave-from="opacity-100 translate-y-0 sm:scale-100" leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
-        <div class="bg-white w-[350px] rounded-md shadow-2xl shadow-brand-navy/60">
+        <div class="bg-white w-[200px]  md:w-[350px] rounded-md shadow-2xl shadow-brand-navy/60">
           <!--bg-gradient-to-br from-20% from-brand-navy-->
           <header class="relative bg-[#095e54] text-white rounded-t-md p-3 py-4">
             <div class="flex space-x-2">
               <div class="h-10 w-10 border-2 border-green-400 shrink-0 grow-0 flex justify-center items-center rounded-full">
-                <img src="/favicon.svg" alt="Well Led Care logo">
+                <img src="/favicon.svg" class="w-8 rounded-2xl" alt="Well Led Care logo">
               </div>
               <div>
                 <h3 class="text-sm font-bold text-white tracking-wide">FORT Company Support</h3>
@@ -18,7 +18,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="fill-brand-green" height="1em" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
             </button>
           </header>
-          <div class="relative bg-[#E5DDD4] h-[200px] py-4 px-5"   style="background-image:linear-gradient(rgb(229,221,212,0.9), rgb(229,221,212,0.9)), url(/images/chat-pattern.png)">
+          <div class="relative bg-[#E5DDD4] h-[200px] py-4 px-5"   style="background-image:linear-gradient(rgb(229,221,212,0.9), rgb(229,221,212,0.9))">
             <div class="relative chat_message bg-white min-w-[150px] w-fit px-3 py-2 rounded-r-md rounded-b-md">
               <h6 id="name" class="text-gray-400 text-[11px] font-medium tracking-wide">FORT Company Support</h6>
               <p id="message" class="text-sm py-2 leading-relaxed">

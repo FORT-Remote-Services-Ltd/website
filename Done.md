@@ -5,3 +5,8 @@
 - Logos to move below toolstack :: DONE
 
 - Country, city, state, personal contacts, zip code :: add to contact form ::DONE
+
+- contact us: ::New page
+  - chat-box :: Done!! >> create chat,vue component for the chat box >>add to layout near footer
+    Change phone no. and initial message :: Done
+  - page ::DONE

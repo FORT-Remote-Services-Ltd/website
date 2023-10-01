@@ -1,7 +1,7 @@
 Fort Tasks
 - Book Calendar
 
-- Get quote -
+- Get quote - >>NOW
     - Form fields:
         - Choose service - book-keeping or data entry(Choose between the two :: options))
             - If bookeeping::options
@@ -11,10 +11,7 @@ Fort Tasks
         - Description::field
           ??Budget??--->> Thinking of it ::::::IMEKWAMA
 - contact us: ::New page
-    - page
     - quote
-    - chat-box :: Done!! >> create chat,vue component for the chat box >>add to layout near footer
-      Change phone no. and initial message :: Done
 
 - Global presence implementation
 - New page of HOW IT WORKS

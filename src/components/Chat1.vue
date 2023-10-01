@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed bottom-5 right-5 flex flex-col justify-end">
+  <div class="fixed bottom-5 right-5 flex flex-col justify-end z-20">
     <TransitionRoot as="template" :show="open">
       <TransitionChild as="template" enter="ease-out duration-300" enter-from="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" enter-to="opacity-100 translate-y-0 sm:scale-100" leave="ease-in duration-200" leave-from="opacity-100 translate-y-0 sm:scale-100" leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
         <div class="bg-white w-[200px]  md:w-[350px] rounded-md shadow-2xl shadow-brand-navy/60">

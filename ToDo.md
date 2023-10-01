@@ -14,7 +14,7 @@ Fort Tasks
     - page
     - quote
     - chat-box :: Done!! >> create chat,vue component for the chat box >>add to layout near footer
-      Change phone no. and initial message 
+      Change phone no. and initial message :: Done
 
 - Global presence implementation
 - New page of HOW IT WORKS

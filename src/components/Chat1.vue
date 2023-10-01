@@ -10,7 +10,7 @@
                 <img src="/favicon.svg" alt="Well Led Care logo">
               </div>
               <div>
-                <h3 class="text-sm font-bold text-white tracking-wide">Well Led Care Ltd</h3>
+                <h3 class="text-sm font-bold text-white tracking-wide">FORT Company Support</h3>
                 <p class="text-[10px] text-slate-200">Replies within 1 hr</p>
               </div>
             </div>
@@ -20,7 +20,7 @@
           </header>
           <div class="relative bg-[#E5DDD4] h-[200px] py-4 px-5"   style="background-image:linear-gradient(rgb(229,221,212,0.9), rgb(229,221,212,0.9)), url(/images/chat-pattern.png)">
             <div class="relative chat_message bg-white min-w-[150px] w-fit px-3 py-2 rounded-r-md rounded-b-md">
-              <h6 id="name" class="text-gray-400 text-[11px] font-medium tracking-wide">Well Led Care</h6>
+              <h6 id="name" class="text-gray-400 text-[11px] font-medium tracking-wide">FORT Company Support</h6>
               <p id="message" class="text-sm py-2 leading-relaxed">
                 hi there 👋<br>
                 How can I help you?
@@ -64,7 +64,7 @@ const message = ref('')
 
 const sendChat = () => {
   if (message.value.length > 0){
-    let url = `https://api.whatsapp.com/send?phone=07361813395&text=${message.value}`
+    let url = `https://api.whatsapp.com/send?phone=12679958208&text=${message.value}`
     window.open(url, '_blank')
     message.value = ''
   }

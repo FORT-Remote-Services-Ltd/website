@@ -6,7 +6,14 @@
 
 - Country, city, state, personal contacts, zip code :: add to contact form ::DONE
 
+<<<<<<< HEAD
 - chat-box :: Done!! >> create chat,vue component for the chat box >>add to layout near footer
   Change phone no. and initial message ::DONE
 - - contact us: ::New page
   - page::DONE
+=======
+- contact us: ::New page
+  - chat-box :: Done!! >> create chat,vue component for the chat box >>add to layout near footer
+    Change phone no. and initial message :: Done
+  - page ::DONE
+>>>>>>> bd38af828b4c58b5256f7f00c6b84274a0c097bd

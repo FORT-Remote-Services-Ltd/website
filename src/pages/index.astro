@@ -6,6 +6,7 @@ import Testimonials from '../components/Testimonials.vue'
 import { Image } from 'astro:assets';
 import FortImage from '../assets/images/fort.svg'
 import FortExplainerImage from '../assets/images/fort-explainer-01.svg'
+import MissionImage from '../assets/images/fortmission.svg'
 import Workforce from '../assets/images/workforce.jpg'
 
 ---
@@ -29,9 +30,9 @@ import Workforce from '../assets/images/workforce.jpg'
             </div>
             <div class="animate_right md:w-1/2 hidden lg:block">
               <div class="relative 2xl:-mr-7.5">
-                <img src="./images/shape/shape-01.png" alt="shape" class="absolute -left-11.5 top-0" />
-                <img src="./images/shape/shape-02.svg" alt="shape" class="absolute right-0 bottom-0" />
-                <img src="./images/shape/shape-03.svg" alt="shape" class="absolute -right-6.5 bottom-0" />
+                <img src="/images/shape/shape-01.png" alt="shape" class="absolute -left-11.5 top-0" />
+                <img src="/images/shape/shape-02.svg" alt="shape" class="absolute right-0 bottom-0" />
+                <img src="/images/shape/shape-03.svg" alt="shape" class="absolute -right-6.5 bottom-0" />
                 <div>
                   <Image src={FortImage} alt="Fort Remote Services"/>
                 </div>
@@ -129,8 +130,7 @@ import Workforce from '../assets/images/workforce.jpg'
     <div class="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
       <div class="flex items-center gap-8 lg:gap-32.5">
         <div class="animate_left hidden md:block md:w-1/2">
-          <img src="./images/about/about-light-01.svg" alt="About" class="dark:hidden"/>
-          <img src="./images/about/about-dark-01.svg" alt="About" class="hidden dark:block"/>
+          <Image src={MissionImage} alt="Fort Remote Mission"/>
         </div>
         <div class="animate_right md:w-1/2">
           <h4 class="text-black dark:text-white font-medium uppercase">
@@ -189,15 +189,15 @@ import Workforce from '../assets/images/workforce.jpg'
       <FeatureTabs client:only="vue" />
       <!-- ===== Features Tab End ===== -->
 
-  <!-- ===== Funfact Start ===== -->
-  <section class="py-20 lg:py-22.5 px-4 md:px-8 2xl:px-0">
+  <!-- ===== FunFact Start ===== -->
+  <section class="py-20 lg:py-22.5 px-4 md:px-8 2xl:px-0 z-10">
     <div
         class="mx-auto max-w-c-1390 py-22.5 xl:py-27.5 relative z-1 rounded-lg bg-gradient-to-t from-[#F8F9FF] to-[#DEE7FF] dark:bg-gradient-to-t dark:from-transparent dark:to-transparent dark:bg-blacksection dark:stroke-strokedark"
     >
-      <!--          <img src="./images/shape/shape-04.svg" alt="Man" class="absolute -top-25 -left-15 lg:left-0 -z-1" />-->
-      <img src="./images/shape/shape-05.svg" alt="Doodle" class="absolute bottom-0 right-0 -z-1"/>
-      <img src="./images/shape/shape-dotted-light-02.svg" alt="Dotted" class="absolute top-0 left-0 -z-1 dark:hidden"/>
-      <img src="./images/shape/shape-dotted-dark-02.svg" alt="Dotted" class="absolute top-0 left-0 -z-1 hidden dark:block"/>
+      <!--          <img src="/images/shape/shape-04.svg" alt="Man" class="absolute -top-25 -left-15 lg:left-0 -z-1" />-->
+      <img src="/images/shape/shape-05.svg" alt="Doodle" class="absolute bottom-0 right-0 -z-1"/>
+      <img src="/images/shape/shape-dotted-light-02.svg" alt="Dotted" class="absolute top-0 left-0 -z-1 dark:hidden"/>
+      <img src="/images/shape/shape-dotted-dark-02.svg" alt="Dotted" class="absolute top-0 left-0 -z-1 hidden dark:block"/>
 
       <div class="animate_top mx-auto text-center md:w-4/5 lg:w-2/3 xl:w-1/2 mb-12.5 lg:mb-17.5 px-4 md:px-0">
         <h2 class="font-bold text-black dark:text-white text-3xl xl:text-sectiontitle3 mb-4">Global Trust, Local Impact.</h2>
@@ -222,7 +222,7 @@ import Workforce from '../assets/images/workforce.jpg'
       </div>
     </div>
   </section>
-  <!-- ===== Funfact End ===== -->
+  <!-- ===== FunFact End ===== -->
 
   <!-- ===== Integrations Start ===== -->
   <section>
@@ -241,13 +241,13 @@ import Workforce from '../assets/images/workforce.jpg'
 
     <div class="mx-auto max-w-c-1154 px-4 md:px-8 xl:px-0 relative z-50 mt-15 xl:mt-20">
       <div class="absolute -top-3/4 -z-1">
-        <img src="./images/shape/shape-dotted-light.svg" alt="Dotted" class="dark:hidden"/>
-        <img src="./images/shape/shape-dotted-dark.svg" alt="Dotted" class="hidden dark:block"/>
+        <img src="/images/shape/shape-dotted-light.svg" alt="Dotted" class="dark:hidden"/>
+        <img src="/images/shape/shape-dotted-dark.svg" alt="Dotted" class="hidden dark:block"/>
       </div>
       <div class="flex flex-wrap gap-y-10 justify-around">
         <div class="animate_top w-1/6">
           <div class="inline-block rounded-[10px] shadow-solid-7 bg-white dark:bg-btndark p-4.5">
-            <img class="h-16" src="./images/brand/quickbooks-2.svg" alt="Brand"/>
+            <img class="h-16" src="/images/brand/quickbooks-2.svg" alt="Brand"/>
           </div>
         </div>
 
@@ -255,7 +255,7 @@ import Workforce from '../assets/images/workforce.jpg'
 
         <div class="animate_top w-1/6">
           <div class="inline-block rounded-[10px] shadow-solid-7 bg-white dark:bg-btndark p-4.5">
-            <img class="h-16" src="./images/brand/vue-9.svg" alt="Brand"/>
+            <img class="h-16" src="/images/brand/vue-9.svg" alt="Brand"/>
           </div>
         </div>
 
@@ -265,7 +265,7 @@ import Workforce from '../assets/images/workforce.jpg'
 
         <div class="animate_top w-1/6">
           <div class="inline-block rounded-[10px] shadow-solid-7 bg-white dark:bg-btndark p-4.5">
-            <img class="h-16" src="./images/brand/mysql-logo.svg" alt="Brand"/>
+            <img class="h-16" src="/images/brand/mysql-logo.svg" alt="Brand"/>
           </div>
         </div>
 
@@ -277,7 +277,7 @@ import Workforce from '../assets/images/workforce.jpg'
 
         <div class="animate_top w-1/6">
           <div class="inline-block rounded-[10px] shadow-solid-7 bg-white dark:bg-btndark p-4.5">
-            <img class="h-16" src="./images/brand/laravel-2.svg" alt="Brand"/>
+            <img class="h-16" src="/images/brand/laravel-2.svg" alt="Brand"/>
           </div>
         </div>
 
@@ -287,7 +287,7 @@ import Workforce from '../assets/images/workforce.jpg'
 
         <div class="animate_top w-1/6">
           <div class="inline-block rounded-[10px] shadow-solid-7 bg-white dark:bg-btndark p-4.5">
-            <img class="h-16" src="./images/brand/excel-4.svg" alt="Brand"/>
+            <img class="h-16" src="/images/brand/excel-4.svg" alt="Brand"/>
           </div>
         </div>
 
@@ -297,7 +297,7 @@ import Workforce from '../assets/images/workforce.jpg'
 
         <div class="animate_top w-1/6">
           <div class="inline-block rounded-[10px] shadow-solid-7 bg-white dark:bg-btndark p-4.5">
-            <img class="w-40" src="./images/brand/clickup.svg" alt="Brand"/>
+            <img class="w-40" src="/images/brand/clickup.svg" alt="Brand"/>
           </div>
         </div>
       </div>
@@ -309,28 +309,28 @@ import Workforce from '../assets/images/workforce.jpg'
     <div class="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
       <div class="grid grid-cols-3 md:grid-cols-6 gap-7.5 lg:gap-12.5 xl:gap-29 justify-center items-center">
         <a href="#" class="animate_top block">
-          <img class="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden" src="./images/brand/brand-light-01.svg" alt="Clients" />
-          <img class="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block" src="./images/brand/brand-dark-01.svg" alt="Clients" />
+          <img class="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden" src="/images/brand/brand-light-01.svg" alt="Clients" />
+          <img class="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block" src="/images/brand/brand-dark-01.svg" alt="Clients" />
         </a>
         <a href="#" class="animate_top block">
-          <img class="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden" src="./images/brand/brand-light-02.svg" alt="Clients" />
-          <img class="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block" src="./images/brand/brand-dark-02.svg" alt="Clients" />
+          <img class="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden" src="/images/brand/brand-light-02.svg" alt="Clients" />
+          <img class="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block" src="/images/brand/brand-dark-02.svg" alt="Clients" />
         </a>
         <a href="#" class="animate_top block">
-          <img class="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden" src="./images/brand/brand-light-03.svg" alt="Clients" />
-          <img class="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block" src="./images/brand/brand-dark-03.svg" alt="Clients" />
+          <img class="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden" src="/images/brand/brand-light-03.svg" alt="Clients" />
+          <img class="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block" src="/images/brand/brand-dark-03.svg" alt="Clients" />
         </a>
         <a href="#" class="animate_top block">
-          <img class="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden" src="./images/brand/brand-light-04.svg" alt="Clients" />
-          <img class="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block" src="./images/brand/brand-dark-04.svg" alt="Clients" />
+          <img class="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden" src="/images/brand/brand-light-04.svg" alt="Clients" />
+          <img class="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block" src="/images/brand/brand-dark-04.svg" alt="Clients" />
         </a>
         <a href="#" class="animate_top block">
-          <img class="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden" src="./images/brand/brand-light-05.svg" alt="Clients" />
-          <img class="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block" src="./images/brand/brand-dark-05.svg" alt="Clients" />
+          <img class="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden" src="/images/brand/brand-light-05.svg" alt="Clients" />
+          <img class="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block" src="/images/brand/brand-dark-05.svg" alt="Clients" />
         </a>
         <a href="#" class="animate_top block">
-          <img class="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden" src="./images/brand/brand-light-06.svg" alt="Clients" />
-          <img class="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block" src="./images/brand/brand-dark-06.svg" alt="Clients" />
+          <img class="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden" src="/images/brand/brand-light-06.svg" alt="Clients" />
+          <img class="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block" src="/images/brand/brand-dark-06.svg" alt="Clients" />
         </a>
       </div>
     </div>
@@ -349,11 +349,11 @@ import Workforce from '../assets/images/workforce.jpg'
             </div>
             <div class="animate_right lg:w-[45%]">
               <div class="flex items-center justify-end xl:justify-between">
-                <img src="./images/shape/shape-06.svg" alt="Saly" class="hidden xl:block" />
+                <img src="/images/shape/shape-06.svg" alt="Saly" class="hidden xl:block" />
                 <a href="signup.html" class="inline-flex items-center gap-2.5 font-medium text-white dark:text-black bg-black dark:bg-white rounded-full py-3 px-6">
                   Sign up free
-                  <img src="./images/icon/icon-arrow-dark.svg" alt="Arrow" class="dark:hidden" />
-                  <img src="./images/icon/icon-arrow-light.svg" alt="Arrow" class="hidden dark:block" />
+                  <img src="/images/icon/icon-arrow-dark.svg" alt="Arrow" class="dark:hidden" />
+                  <img src="/images/icon/icon-arrow-light.svg" alt="Arrow" class="hidden dark:block" />
                 </a>
               </div>
             </div>
@@ -366,8 +366,8 @@ import Workforce from '../assets/images/workforce.jpg'
       <section class="pb-20 lg:pb-25 xl:pb-30 overflow-hidden">
         <div class="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0 relative">
           <div class="absolute -bottom-7.5 -z-1">
-            <img src="./images/shape/shape-dotted-light.svg" alt="Dotted" class="dark:hidden" />
-            <img src="./images/shape/shape-dotted-light.svg" alt="Dotted" class="hidden dark:block" />
+            <img src="/images/shape/shape-dotted-light.svg" alt="Dotted" class="dark:hidden" />
+            <img src="/images/shape/shape-dotted-light.svg" alt="Dotted" class="hidden dark:block" />
           </div>
           <div class="flex flex-wrap md:flex-nowrap md:items-center gap-8 xl:gap-32.5">
             <div class="animate_left md:w-2/5 lg:w-1/2">
@@ -379,8 +379,8 @@ import Workforce from '../assets/images/workforce.jpg'
 
               <a href="#" class="flex items-center gap-2.5 text-black dark:text-white mt-25">
                 Know More
-                <img class="dark:hidden" src="./images/icon/icon-arrow-light.svg" alt="Arrow" />
-                <img class="hidden dark:block" src="./images/icon/icon-arrow-dark.svg" alt="Arrow" />
+                <img class="dark:hidden" src="/images/icon/icon-arrow-light.svg" alt="Arrow" />
+                <img class="hidden dark:block" src="/images/icon/icon-arrow-dark.svg" alt="Arrow" />
               </a>
             </div>
 

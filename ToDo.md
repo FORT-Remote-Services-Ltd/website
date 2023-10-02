@@ -11,10 +11,9 @@ Fort Tasks
         - Description::field
           ??Budget??--->> Thinking of it ::::::IMEKWAMA
 - contact us: ::New page
-    - page
+    - page::DONE
     - quote
-    - chat-box :: Done!! >> create chat,vue component for the chat box >>add to layout near footer
-      Change phone no. and initial message 
+    
 
-- Global presence implementation
+- Global presence implementation    
 - New page of HOW IT WORKS

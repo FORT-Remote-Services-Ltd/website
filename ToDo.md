@@ -11,7 +11,13 @@ Fort Tasks
         - Description::field
           ??Budget??--->> Thinking of it ::::::IMEKWAMA
 - contact us: ::New page
+<<<<<<< HEAD
+    - page::DONE
     - quote
+    
+=======
+    - quote
+>>>>>>> bd38af828b4c58b5256f7f00c6b84274a0c097bd
 
-- Global presence implementation
+- Global presence implementation    
 - New page of HOW IT WORKS

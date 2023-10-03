@@ -2,6 +2,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Chat from '../components/Chat.vue'
+import HowItWorks from '../components/HowItWorks.vue'
 import Chat1 from '../components/Chat1.vue'
 import FeatureTabs from '../components/FeatureTabs.vue'
 import Faq from '../components/Faq.vue'
@@ -18,7 +19,7 @@ import Testimonials from '../components/Testimonials.vue'
                     class="animate_top text-center mx-auto sm:flex justify-around"
 
             >
-                <h2 class="font-bold text-3xl xl:text-sectiontitle3 text-black dark:text-white md:w-4/5 xl:w-1/2 mx-auto py-10 ">How It Works</h2>
+              <!--  <h2 class="font-bold text-3xl xl:text-sectiontitle3 text-black dark:text-white md:w-4/5 xl:w-1/2 mx-auto py-10 ">How It Works</h2>-->
             </div>
             <div class="absolute -z-1 rounded-lg left-0 top-0 w-full h-2/3 bg-gradient-to-t from-[#F8F9FF] to-[#DEE7FF] dark:bg-gradient-to-t dark:from-[#24283E] dark:to-[#252A42]"></div>
 
@@ -31,11 +32,13 @@ import Testimonials from '../components/Testimonials.vue'
 
             <div class="flex flex-wrap md:flex-nowrap flex-col-reverse md:flex-row gap-8 xl:gap-20 md:justify-between">
 
-                
+
 
             </div>
 
         </div>
+
+        <HowItWorks client:only="vue"/>
 
 
     </section>

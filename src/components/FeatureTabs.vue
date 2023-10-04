@@ -2,7 +2,6 @@
 import {ref} from 'vue'
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
 
-
 const service_specifics = ref({
   bookkeeping: [
       'Journal Entry and General Ledger Maintenance',
@@ -33,21 +32,12 @@ const service_specifics = ref({
 
 const items = ref([
   {key:'bookkeeping',tab_title:'Bookkeeping Services', title:'Efficient, Accurate, and Convenient Remote Bookkeeping.',
-    image:'/images/features/features-light-01.svg',
-    dark_image:'/images/features/features-dark-01.svg'
-  },
-  {
-    key: 'customer_care',
-    tab_title: 'Virtual Customer Care Services',
-    title: 'Your Success, Our Virtual Priority.',
-    image: '/images/features/features-light-01.svg',
-    dark_image: '/images/features/features-dark-01.svg'
+    image:'src/assets/images/accounting.jpg',
   },
   {
     key: 'data_entry',
     tab_title: 'Data Entry Services', title: 'Precision Data Entry, Excellence Every Time',
-    image: '/images/features/features-light-01.svg',
-    dark_image: '/images/features/features-dark-01.svg',
+    image: 'src/assets/images/office-worker.jpg',
   }
 ])
 </script>
@@ -99,9 +89,8 @@ const items = ref([
                       </ul>
                     </div>
                   </div>
-                  <div class="hidden md:block md:w-1/2">
+                  <div class="hidden md:block md:w-1/2 h-[359px] w-[539px] bg-red-400 bg-no-repeat bg-cover">
                     <img :src="item.image" alt="Features" class="dark:hidden" />
-                    <img :src="item.dark_image" alt="Features" class="hidden dark:block" />
                   </div>
                 </div>
               </TabPanel>

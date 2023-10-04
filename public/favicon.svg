@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;}
-	.st1{fill:url(#SVGID_1_);}
+	.st1{fill:transparent;}
 	.st2{fill:url(#Unnamed_Pattern);}
 	.st3{fill:#FFFFFF;}
 </style>
 <pattern  y="500" width="500" height="499.4" patternUnits="userSpaceOnUse" id="Unnamed_Pattern" viewBox="0 -499.4 500 499.4" style="overflow:visible;">
 	<g>
 		<rect y="-499.4" class="st0" width="500" height="499.4"/>
-		
-			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="7942" y1="-8193.3057" x2="8442" y2="-8193.3057" gradientTransform="matrix(1 0 0 1 -7942 7943.6108)">
-			<stop  offset="0" style="stop-color:#FAA51A"/>
-			<stop  offset="1" style="stop-color:#F15A48"/>
-		</linearGradient>
 		<rect y="-499.4" class="st1" width="500" height="499.4"/>
 	</g>
 </pattern>

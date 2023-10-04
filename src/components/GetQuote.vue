@@ -140,13 +140,13 @@ const options = ref([
         },
         {
           disabled: false,
-          label:"Legal Data Entry",
-          value:"Legal Data Entry",
+          label:"Catalog Data Entry",
+          value:"Catalog Data Entry",
         },
         {
           disabled: false,
-          label:"Legal Data Entry",
-          value:"Legal Data Entry",
+          label:"Surveys and Market Research Data Entry",
+          value:"Surveys and Market Research Data Entry",
         },
         {
           disabled: false,

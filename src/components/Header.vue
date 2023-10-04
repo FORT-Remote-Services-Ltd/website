@@ -60,7 +60,7 @@ handleScroll();
       >
         <nav>
           <ul class="text-md font-medium flex lg:items-center flex-col lg:flex-row gap-5 lg:gap-10">
-            <li><a href="/services" class="hover:text-primary">Services</a></li>
+            <li><a href="/" class="hover:text-primary">Home</a></li>
             <!--<li><a href="about-us" class="hover:text-primary">About Us</a></li>-->
             <li><a href="/howItWorks" class="hover:text-primary">How It Works</a></li>
             <li><a href="/contact" class="hover:text-primary">Contact Us</a></li>
@@ -79,7 +79,7 @@ handleScroll();
 
           <button @click="showModal">
 
-        <a href="#"
+        <a href="/get-quote"
            :class="[
                stickyMenu ? 'bg-primary hover:bg-primary text-white' : 'border border-primary hover:border-primary  text-primary',
              'flex items-center justify-center ease-in-out duration-300 text-regular rounded-full py-2.5 px-7.5', ''

@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import FeatureTabs from '../components/FeatureTabs.vue'
 import Faq from '../components/Faq.vue'
+import Flags from '../components/Flags.vue'
 import Testimonials from '../components/Testimonials.vue'
 import { Image } from 'astro:assets';
 import FortImage from '../assets/images/fort.svg'
@@ -188,7 +189,7 @@ import Workforce from '../assets/images/workforce.jpg'
       <FeatureTabs client:only="vue" />
       <!-- ===== Features Tab End ===== -->
 
-  <!-- ===== FunFact Start ===== -->
+  <!-- ===== Global Impact Start ===== -->
   <section class="py-20 lg:py-22.5 px-4 md:px-8 2xl:px-0 z-10">
     <div
         class="mx-auto max-w-c-1390 py-22.5 xl:py-27.5 relative z-1 rounded-lg bg-gradient-to-t from-[#F8F9FF] to-[#DEE7FF] dark:bg-gradient-to-t dark:from-transparent dark:to-transparent dark:bg-blacksection dark:stroke-strokedark"
@@ -201,6 +202,9 @@ import Workforce from '../assets/images/workforce.jpg'
       <div class="animate_top mx-auto text-center md:w-4/5 lg:w-2/3 xl:w-1/2 mb-12.5 lg:mb-17.5 px-4 md:px-0">
         <h2 class="font-bold text-black dark:text-white text-3xl xl:text-sectiontitle3 mb-4">Global Trust, Local Impact.</h2>
         <p class="lg:w-11/12 mx-auto">With a worldwide client base, we understand the unique requirements and regulations of different regions. Our international team is equipped to provide customized solutions tailored to your specific needs, no matter where you're located.</p>
+      </div>
+      <div class="flex justify-evenly">
+        <Flags/>
       </div>
 
       <div class="flex flex-wrap justify-center gap-8 lg:gap-42.5">
@@ -219,7 +223,7 @@ import Workforce from '../assets/images/workforce.jpg'
       </div>
     </div>
   </section>
-  <!-- ===== FunFact End ===== -->
+  <!-- ===== Global Impact End ===== -->
 
   <!-- ===== Integrations Start ===== -->
   <section>

@@ -2,13 +2,13 @@
 <template>
   <div>
 <!--    <h2 class="text-gray-500 text-xs font-medium uppercase tracking-wide">Pinned Projects</h2>-->
-    <ul role="list" class="mt-3 grid grid-cols-1 gap-2 sm:gap-20 sm:grid-cols-2 lg:grid-cols-4">
-      <li v-for="project in projects" :key="project.name" class="col-span-1 flex shadow-sm rounded-md">
-        <div :class="[project.bgColor, 'flex-shrink-0 flex items-center justify-center w-16 text-white text-sm font-medium rounded-l-md']">
+    <ul role="list" class=" grid grid-cols-1 sm:gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <li v-for="project in projects" :key="project.name" class=" flex rounded-md">
+        <div :class="[ 'flex-shrink-0 flex items-center justify-center   text-white text-sm font-medium p-5']">
           <span :class="[project.code, 'flag-icon', 'flag-icon-squared']"></span>
         </div>
-        <div class="flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
-          <div class="flex-1 px-4 py-2 text-sm truncate">
+        <div class="flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded ">
+          <div class=" px-5  text-sm ">
             <a :href="project.href" class="text-gray-900 font-medium hover:text-gray-600">{{ project.country }}</a>
 <!--            <p class="text-gray-500">{{ project.members }} Members</p>-->
           </div>

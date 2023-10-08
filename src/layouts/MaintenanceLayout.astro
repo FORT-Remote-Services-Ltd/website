@@ -1,0 +1,35 @@
+---
+import Chat1 from "../components/Chat1.vue";
+
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+    <title>{title} | Fort Remote Services</title>
+  </head>
+  <body class="bg-slate-100">
+
+
+    <main>
+     <slot />
+    </main>
+
+    <div>
+        <Chat1 client:only="vue"/>
+    </div>
+    <!-- ===== Footer End ===== -->
+
+
+  </body>
+</html>
+

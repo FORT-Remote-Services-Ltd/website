@@ -32,7 +32,7 @@ const service_specifics = ref({
 
 const items = ref([
   {key:'bookkeeping',tab_title:'Bookkeeping Services', title:'Efficient, Accurate, and Convenient Remote Bookkeeping.',
-    image:'src/assets/images/accounting.jpg',
+    image:'src/assets/images/book-keeping.png',
   },
   {
     key: 'data_entry',

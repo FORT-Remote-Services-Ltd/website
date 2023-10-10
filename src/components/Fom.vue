@@ -1,6 +1,6 @@
 <script>
 
-import emailJs from 'emailjs-com';
+import emailJs from '@emailjs/browser';
 import {ref} from 'vue';
 import Toast from "./Toast.vue";
 

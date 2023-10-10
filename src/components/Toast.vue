@@ -1,6 +1,6 @@
 <template>
 
-  <div :class="classes.container" class="flex py-2 px-1 mb-2 rounded relative space-x-3">
+  <div :class="classes.container" class="flex py-2 px-1 mb-2 rounded relative space-x-3" ref="elementToScrollTo">
       <span v-if="theme === 'success'" class="flex shrink-0 grow-0 justify-center items-center h-5 w-5 rounded-full bg-green-200 ">
         <svg xmlns="http://www.w3.org/2000/svg" class="fill-green-700" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
       </span>
@@ -28,7 +28,7 @@
 //      variant: "dark",
 //    }
 //  );
-import {computed} from "vue";
+import {computed, onMounted, ref} from "vue";
 
 export default {
   name: "Toast",
@@ -39,6 +39,7 @@ export default {
   },
   emits: ['close'],
   setup(props){
+    const elementToScrollTo = ref(null)
     const classes = computed(() => {
       let classes = {
         container:'',
@@ -61,7 +62,20 @@ export default {
       return classes
     })
 
-    return {classes}
+    onMounted(() => {
+          // Access the DOM element using this.$refs
+      console.log('toast element: ', elementToScrollTo.value)
+        // Check if the element exists
+        if (elementToScrollTo.value) {
+          // Scroll to the element
+          elementToScrollTo.value.scrollIntoView({
+            behavior: 'smooth', // You can use 'auto' for instant scrolling
+            block: 'start',     // You can change this to 'end' or 'center' as needed
+          });
+        }
+    })
+
+    return {classes, elementToScrollTo}
 
   }
 }

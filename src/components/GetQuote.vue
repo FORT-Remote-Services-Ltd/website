@@ -1,59 +1,72 @@
 <script setup lang="ts">
 import {reactive, ref} from 'vue'
-import emailJs from 'emailjs-com';
+import emailJs from '@emailjs/browser';
 // import Toast from "./Toast.vue";
 import {countries} from "../library/country-list.js";
 import {
   NFormItem, NSpace, NInput, NButton,
   NSelect, NCascader, NConfigProvider} from 'naive-ui'
+import Toast from "@components/Toast.vue";
+
 
 const Mailer = emailJs
-Mailer.init("454WVnzKaYzokYZ3g");
+Mailer.init("sXiaqRd5-KvJJl90G");
 
 const budget_options = [
   {
     disabled: false,
-    label:"$1,000 - $5,000",
-    value:"$1,000 - $5,000",
+    label:"$100 - $300",
+    value:"$100 - $300",
   },
   {
     disabled: false,
-    label:"$5,000 - $10,000",
-    value:"$10,000 - $20,000",
+    label:"$301 - $500",
+    value:"$301 - $500",
   },
   {
     disabled: false,
-    label:"$20,000 - $30,000",
-    value:"$30,000 - $40,000",
+    label:"$501 - $1,000",
+    value:"$501 - $1,000",
   },
   {
     disabled: false,
-    label:"$40,000 - $50,000",
-    value:"$40,000 - $50,000",
+    label:"$1,001 - $3,000",
+    value:"$1,001 - $3,000",
   },
   {
     disabled: false,
-    label:"$50,000 and above",
-    value:"$50,000 and above",
+    label:"$3,001 - $5,000",
+    value:"$3,001 - $5,000",
+  },
+
+  {
+    disabled: false,
+    label:"$5,001 - $10,000",
+    value:"$5,001 - $10,000",
+  },
+  {
+    disabled: false,
+    label:"Over $10,000",
+    value:"Over $10,000",
   },
 
 ]
 const retainer_options = [
-  {
-    disabled: false,
-    label:"Long-term project (Over 6 months commitment)",
-    value:"Long-term project",
-  },
-  {
-    disabled: false,
-    label:"Contract (Between 4 and 24 weeks)",
-    value:"Contract",
-  },
-  {
-    disabled: false,
-    label:"Short-term task (Less than 4 weeks)",
-    value:"Short-term task",
-  },
+    {
+      disabled: false,
+      label:"Short-term task (Less than 4 weeks)",
+      value:"Short-term task",
+    },
+    {
+      disabled: false,
+      label:"Contract (Between 4 and 24 weeks)",
+      value:"Contract",
+    },
+    {
+      disabled: false,
+      label:"Long-term project (Over 6 months commitment)",
+      value:"Long-term project",
+    }
 ]
 const options = ref([
   {
@@ -173,74 +186,12 @@ const options = ref([
 
 ])
 
-// Form
-const terms = ref('')
-const description = ref('')
-const retainer = ref('')
-const phone = ref('')
-const email = ref('')
-const country = ref('')
-const service = ref('')
-const f_name = ref('')
 let sending = ref(false)
-// Reset form
-const resetForm = () => {
-  f_name.value = ''
-  terms.value = ''
-  description.value = ''
-  retainer.value = ''
-  phone.value = ''
-  email.value = ''
-  country.value = ''
-  service.value = ''
-}
-
-const toast = ref({
-  title: '',
-  description: '',
-  type: '',
-  show: false
+let sending_result = ref({
+  type:'success',
+  message:'',
+  showing: false
 })
-
-//send meail
-/**/const sendMail = () => {
-  Mailer.send("service_7jdyxxj", "template_3r16flj",{
-    to_name: 'Michael',
-    from_name:`${name.value}`,
-    phone: phone.value,
-    message: message.value,
-    email: email.value,
-    reply_to: email.value
-  }).then((res)=>{
-    console.log('Email sent successfully: ', res)
-    if (res.text.toLowerCase() === 'ok'){
-      toast.value.title = 'Message sent successfully!'
-      toast.value.description = 'I\'ll be replying to your message shortly. Thank you for reaching out.'
-      toast.value.type = 'success'
-      toast.value.show = true
-
-      setTimeout(() => {
-        toast.value.show = false
-      }, 20000)
-    }
-  }).catch((error) =>{
-    console.log('Email failed: ', error)
-    toast.value.title = 'Error!'
-    toast.value.description = 'Am sorry! Something went wrong when sending your message. Please try again later'
-    toast.value.type = 'danger'
-    toast.value.show = true
-
-    setTimeout(() => {
-      toast.value.show = false
-    }, 20000)
-  }).finally(() => {
-    sending.value = false
-    resetForm()
-  });
-
-
-
-}
 
 const form = reactive({
   service:null,
@@ -253,6 +204,67 @@ const form = reactive({
   country:''
 })
 
+
+const resetForm = () => {
+  for (let i = 0; i < Object.keys(form).length; i++) {
+    if (form[Object.keys(form)[i]] === 'service'){
+      form[Object.keys(form)[i]] = null
+    }else{
+      form[Object.keys(form)[i]] = ''
+    }
+  }
+}
+
+//send meail
+  const sendMail = () => {
+    sending.value = true
+    setTimeout(() => {
+      resetForm()
+
+
+      sending.value = false
+    }, 3000)
+
+    //formulate the email body
+    //send
+
+    Mailer.send("service_uuvhzii", "template_fort_quote",{
+      to_name: 'Sales agent',
+      from_name: form.name,
+      phone: form.phone,
+      budget: form.budget,
+      service: form.phone,
+      retainer_terms: form.retainer_terms,
+      country: form.country,
+      description: form.description,
+      email: form.email,
+      reply_to: form.email
+    }).then((res)=>{
+      console.log('Email sent successfully: ', res)
+      if (res.text.toLowerCase() === 'ok'){
+        sending_result.value.message = 'Your request has been submitted successfully, we shall be in touch with you soon'
+        sending_result.value.type = 'success'
+        sending_result.value.showing = true
+
+      }
+    })
+        .catch((error) =>{
+      console.log('Email failed: ', error)
+          sending_result.value.message = 'Am sorry! Something went wrong when sending your message. Please try again later'
+        sending_result.value.type = 'danger'
+        sending_result.value.showing = true
+
+    }).finally(() => {
+      sending.value = false
+      resetForm()
+      setTimeout(() => {
+          sending_result.value.showing  = false
+        }, 20000)
+    });
+
+  }
+
+
   const themeOverrides = {
       common: {
         primaryColor: '#008080',
@@ -262,80 +274,80 @@ const form = reactive({
       }
   }
   const country_options = countries.map(country_name => {
-    return {label: country_name, value: country_name, disabled: false, sendMail, sending, toast, service, country,terms, description, retainer,phone, email}
+    return {label: country_name, value: country_name, disabled: false}
   })
-// return {sendMail, sending, toast, service, country,terms, description, retainer,phone, email}
 
 </script>
 
 <template>
-<form @submit.prevent>
-  <n-config-provider :theme-overrides="themeOverrides">
-    <n-space vertical>
-        <n-form-item label="Full Name">
-          <n-input
+  <Toast v-if="sending_result.showing && sending_result.message.length > 0" :title="sending_result.message" :theme="sending_result.type" />
+  <form @submit.prevent="sendMail">
+    <n-config-provider :theme-overrides="themeOverrides">
+      <n-space vertical>
+          <n-form-item label="Full Name">
+            <n-input
+                :input-props="{required: true}"
+                class="!rounded !border-black !hover:border-slate-500"
+                v-model="f_name"
+                size="large" v-model:value="form.name" type="text" placeholder="Full Name" />
+          </n-form-item>
+          <n-form-item label="Choose Service">
+            <n-cascader
               :input-props="{required: true}"
-              class="!rounded !border-black !hover:border-slate-500"
-              v-model="f_name"
-              size="large" v-model:value="form.name" type="text" placeholder="Full Name" />
-        </n-form-item>
-        <n-form-item label="Choose Service">
-          <n-cascader
-            :input-props="{required: true}"
-            v-model="service"
-            size="large" v-model:value="form.service"
-            placeholder="Meaningless values"
-            :options="options"
-            check-strategy="child"
+              v-model="service"
+              size="large" v-model:value="form.service"
+              placeholder="Meaningless values"
+              :options="options"
+              check-strategy="child"
+            />
+          </n-form-item>
+
+          <n-form-item label="Email">
+            <n-input :input-props="{required: true}" v-model="email" size="large" v-model:value="form.email" type="text" placeholder="Email" />
+          </n-form-item>
+
+          <n-form-item label="Phone Number">
+            <n-input :input-props="{required: true}" size="large" v-model="phone" v-model:value="form.phone" type="text" placeholder="e.g +1 26x-xxx-xxxx" />
+          </n-form-item>
+          <n-form-item label="Your Country">
+            <n-select
+                filterable
+                placeholder="Select country"
+
+
+                v-model:value="form.country"
+                v-model="country"
+                :options="country_options" />
+          </n-form-item>
+
+          <n-form-item label="Your Budget">
+            <n-select :input-props="{required: true}"
+                      v-model="terms" placeholder="Your Budget" v-model:value="form.budget" :options="budget_options" />
+          </n-form-item>
+
+          <n-form-item label="Retainer Terms">
+
+            <n-select :input-props="{required: true}" v-model="retainer" v-model:value="form.retainer_terms" :options="retainer_options" />
+          </n-form-item>
+
+         <n-form-item label="Description">
+          <n-input :input-props="{required: true}"    v-model="description"
+            size="large" v-model:value="form.description"
+            type="textarea"
+            placeholder="Describe your project..."
+
           />
         </n-form-item>
-
-        <n-form-item label="Email">
-          <n-input :input-props="{required: true}" v-model="email" size="large" v-model:value="form.email" type="text" placeholder="Email" />
-        </n-form-item>
-
-        <n-form-item label="Phone Number">
-          <n-input :input-props="{required: true}" size="large" v-model="phone" v-model:value="form.phone" type="text" placeholder="e.g +1 26x-xxx-xxxx" />
-        </n-form-item>
-        <n-form-item label="Your Country">
-          <n-select
-              filterable
-              placeholder="Select country"
+      </n-space>
 
 
-              v-model:value="form.country"
-              v-model="country"
-              :options="country_options" />
-        </n-form-item>
-
-        <n-form-item label="Your Budget">
-          <n-select :input-props="{required: true}"
-                    v-model="terms" placeholder="Your Budget" v-model:value="form.budget" :options="budget_options" />
-        </n-form-item>
-
-        <n-form-item label="Retainer Terms">
-
-          <n-select :input-props="{required: true}" v-model="retainer" v-model:value="form.retainer_terms" :options="retainer_options" />
-        </n-form-item>
-
-       <n-form-item label="Description">
-        <n-input :input-props="{required: true}"    v-model="description"
-          size="large" v-model:value="form.description"
-          type="textarea"
-          placeholder="Describe your project..."
-
-        />
-      </n-form-item>
-    </n-space>
-
-
-    <n-space justify="end">
-      <n-button attr-type="reset">Cancel</n-button>
-      <n-button type="primary" color="#008080"
-                style="background-color: #008080" attr-type="submit">Submit</n-button>
-    </n-space>
-  </n-config-provider>
-</form>
+      <n-space justify="end">
+        <n-button :disabled="sending" attr-type="reset">Cancel</n-button>
+        <n-button :disabled="sending" :loading="sending" type="primary" color="#008080"
+                  style="background-color: #008080" attr-type="submit">Submit</n-button>
+      </n-space>
+    </n-config-provider>
+  </form>
 </template>
 
 <style scoped>

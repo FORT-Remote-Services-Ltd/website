@@ -1,6 +1,9 @@
 <template>
   <div class="">
-    <h2 class="font-bold text-3xl flex justify-around xl:text-sectiontitle3 text-black dark:text-white md:w-4/5 xl:w-1/2 mx-auto py-10 ">How it Works</h2>
+    <div class="py-24 flex flex-col justify-center text-center">
+      <h2 class="font-bold text-3xl xl:text-sectiontitle3 text-black dark:text-white py-8">How it Works</h2>
+      <p>We will help you streamline your operations. Here is how:</p>
+    </div>
   <ul role="list" class="grid grid-cols-1 mx-60 my-8 gap-20 mt-10 sm:grid-cols-2 lg:grid-cols-2">
     <li v-for="step in steps" :key="step.id" class="col-span-1 bg-white rounded-b-3xl shadow-2xl divide-y divide-gray-200">
       <div class="border-t-4 border-teal-500">
@@ -47,37 +50,9 @@
 </template>
 
 
-<script>
+<script setup>
 
-
-const people = [
-  {
-    name: 'Jane Cooper',
-    step: 'step 1',
-    title: 'Regional Paradigm Technician',
-    role: 'Admin',
-    email: 'janecooper@example.com',
-    telephone: '+1-202-555-0170',
-    imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
-  },
-
-  // More people...
-]
-
-export default {
-  name: "HowItWorks",
-  components: {
-
-  },
-  setup() {
-    return {
-      people,
-    }
-  },
-  data() {
-    return {
-      steps: [
+const steps = [
         {
           title: "Consultation and Assessment",
           id: 'step 1',
@@ -137,10 +112,8 @@ export default {
         }
         // Add similar objects for Steps 3 to 7
         // ...
-      ],
-    };
-  },
-};
+      ]
+
 </script>
 
 <style scoped>

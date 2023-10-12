@@ -62,7 +62,7 @@ handleScroll();
           <ul class="text-md font-medium flex lg:items-center flex-col lg:flex-row gap-5 lg:gap-10">
             <li><a href="/" class="hover:text-primary">Home</a></li>
             <!--<li><a href="about-us" class="hover:text-primary">About Us</a></li>-->
-            <li><a href="/howItWorks" class="hover:text-primary">How It Works</a></li>
+            <li><a href="/#howItWorks" class="hover:text-primary">How It Works</a></li>
             <li><a href="/contact" class="hover:text-primary">Contact Us</a></li>
           </ul>
         </nav>

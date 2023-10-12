@@ -22,7 +22,8 @@
     "tailwindcss": "^3.0.24",
     "thumbhash": "^0.1.1",
     "vue": "^3.2.30",
-    "vue-carousel": "^0.18.0"
+    "vue-carousel": "^0.18.0",
+    "vue3-marquee-slider": "^1.0.5"
   },
   "devDependencies": {
     "@divriots/jampack": "^0.20.2",

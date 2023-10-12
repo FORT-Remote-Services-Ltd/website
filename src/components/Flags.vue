@@ -26,7 +26,7 @@
 
 <script>
 import { DotsVerticalIcon } from '@heroicons/vue/solid'
-import Flags from "/node_modules/flag-icons/css/flag-icons.min.css";
+import "flag-icons/css/flag-icons.min.css";
 
 const projects = [
   { country: 'India', initials: 'GA', code: 'fi fi-in', href: '#', members: 16, bgColor: 'bg-white' },
@@ -43,15 +43,11 @@ const projects = [
   { country: 'South Africa', initials: 'CD',code: 'fi fi-mx', href: '#', members: 12, bgColor: 'bg-white' },
   { country: 'Mexico', initials: 'CD',code: 'fi fi-mx', href: '#', members: 12, bgColor: 'bg-white' },
   { country: 'Mexico', initials: 'CD',code: 'fi fi-mx', href: '#', members: 12, bgColor: 'bg-white' },
-
-
-
 ]
 
 export default {
   components: {
     DotsVerticalIcon,
-    Flags,
   },
   setup() {
     return {

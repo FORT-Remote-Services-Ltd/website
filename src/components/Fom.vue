@@ -204,6 +204,31 @@ export default {
         </div>
       </form>
     </div>
+    
+      <div class="animate_top w-full md:w-2/5 lg:w-[26%] md:p-7.5 xl:pt-15">
+        <h2 class="text-black dark:text-white text-3xl xl:text-sectiontitle2 font-semibold mb-12.5">Find us</h2>
+
+        <div class="mb-7 5">
+          <h4 class="font-medium text-black dark:text-white text-metatitle3 mb-4">Our Location</h4>
+          <p>124 City Road, London, EC1V 2NX United Kingdom</p>
+        </div>
+        <div class="mb-7 5">
+          <h4 class="font-medium text-black dark:text-white text-metatitle3 mb-4">Email Address</h4>
+          <p><a href="#">sales@fortremote.pro</a></p>
+        </div>
+        <div>
+          <h4 class="font-medium text-black dark:text-white text-metatitle3 mb-4">Phone Number</h4>
+          <p><a href="#">+44 121 790 1866</a></p>
+          <p><a href="#">+1 267-995-8208</a></p>
+        </div>
+        <div class="pt-2">
+          <h4 class="font-medium text-black dark:text-white text-metatitle3 mb-4">WhatsApp Number</h4>
+          <p><a href="#">+1 267-995-8208</a></p>
+        </div>
+
+      </div>
+
+
   </div>
 </template>
 

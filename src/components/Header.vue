@@ -32,7 +32,7 @@ handleScroll();
   <header
     class="fixed left-0 top-0 w-full z-99999 py-7"
     :class="{ 'bg-white dark:bg-black shadow !py-4 transition duration-100' : stickyMenu }">
-    <div class="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0 lg:flex items-center justify-between relative max-h-[400px]" >
+    <div class="mx-auto max-w-c-1390 px-4 md:px-10 xl:px-20 lg:flex items-center justify-between relative max-h-[400px]" >
       <div class="flex items-center justify-between">
         <a href="/">
           <img class="dark:hidden h-[50px]" src="/images/logo/logo-light.svg" alt="Logo Light" />

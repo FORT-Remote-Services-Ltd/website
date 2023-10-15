@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import {ref} from 'vue'
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
+import BookKeeping from '@assets/images/book-keeping.png'
+import Worker from '@assets/images/office-worker.jpg'
 
 const service_specifics = ref({
   bookkeeping: [
@@ -32,12 +34,12 @@ const service_specifics = ref({
 
 const items = ref([
   {key:'bookkeeping',tab_title:'Bookkeeping Services', title:'Efficient, Accurate, and Convenient Remote Bookkeeping.',
-    image:'/src/assets/images/book-keeping.png',
+    image: BookKeeping.src ,
   },
   {
     key: 'data_entry',
     tab_title: 'Data Entry Services', title: 'Precision Data Entry, Excellence Every Time',
-    image: '/src/assets/images/office-worker.jpg',
+    image: Worker.src,
   }
 ])
 </script>

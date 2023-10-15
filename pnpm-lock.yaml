@@ -32,6 +32,9 @@ dependencies:
   flag-icons:
     specifier: ^6.11.1
     version: 6.11.1
+  sharp:
+    specifier: ^0.32.6
+    version: 0.32.6
   tailwindcss:
     specifier: ^3.3.3
     version: 3.3.3

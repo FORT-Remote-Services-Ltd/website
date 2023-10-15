@@ -14,7 +14,7 @@ const testimonials = ref([
 </script>
 
 <template>
-  <n-carousel show-arrow autoplay :slides-per-view="2" :space-between="20" draggable>
+  <n-carousel show-arrow :slides-per-view="1" :space-between="20" loop draggable>
     <template v-for="item in testimonials">
       <div class="shadow-lg border border-stroke dark:border-strokedark rounded">
           <div class="bg-white rounded-lg shadow-solid-9 dark:shadow-none dark:bg-blacksection dark:border dark:border-strokedark p-9 pt-7.5">
@@ -32,7 +32,7 @@ const testimonials = ref([
     </template>
 
     <template #arrow="{ prev, next }">
-      <div class="custom-arrow !mt-20">
+      <div class="custom-arrow mt-20">
         <button type="button" class="custom-arrow--left !bg-primary" @click="prev">
           <n-icon><ArrowBackRound /></n-icon>
         </button>
@@ -42,7 +42,7 @@ const testimonials = ref([
       </div>
     </template>
     <template #dots="{ total, currentIndex, to }">
-      <ul class="custom-dots">
+      <ul class="custom-dots mt-20">
         <li
           v-for="index of total"
           :key="index"

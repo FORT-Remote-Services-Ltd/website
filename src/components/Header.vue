@@ -1,91 +1,167 @@
-<script setup>
-
-
-import {ref, onMounted, onUnmounted} from "vue";
-
-
-
-
-const stickyMenu = ref(false)
-const navigationOpen = ref(false)
-const active_dropdowns = ref([])
-function handleScroll(e){
-  stickyMenu.value = window.pageYOffset > 20;
-}
-//modal
-
-// Add scroll event listener when the component is mounted
-onMounted(() => {
-  window.addEventListener("scroll", handleScroll);
-});
-
-// Remove the scroll event listener when the component is unmounted
-onUnmounted(() => {
-  window.removeEventListener("scroll", handleScroll);
-});
-// Initial check for stickiness
-handleScroll();
-</script>
-
+<!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-
-  <header
-    class="fixed left-0 top-0 w-full z-99999 py-7"
-    :class="{ 'bg-white dark:bg-black shadow !py-4 transition duration-100' : stickyMenu }">
-    <div class="mx-auto max-w-c-1390 px-4 md:px-10 xl:px-20 lg:flex items-center justify-between relative max-h-[400px]" >
-      <div class="flex items-center justify-between">
-        <a href="/">
-          <img class="dark:hidden h-[50px]" src="/images/logo/logo-light.svg" alt="Logo Light" />
-          <img class="hidden dark:block" src="/images/logo/logo-dark.svg" alt="Logo Dark" />
-        </a>
-
-        <button class="lg:hidden block" @click="navigationOpen = !navigationOpen">
-          <span class="block relative cursor-pointer w-5.5 h-5.5">
-            <span class="block absolute w-full h-full">
-              <span class="block relative top-0 left-0 bg-black dark:bg-white rounded-sm w-0 h-0.5 my-1 ease-in-out duration-200 delay-[0]" :class="{ '!w-full delay-300': !navigationOpen }"></span>
-              <span class="block relative top-0 left-0 bg-black dark:bg-white rounded-sm w-0 h-0.5 my-1 ease-in-out duration-200 delay-150" :class="{ '!w-full delay-400': !navigationOpen }"></span>
-              <span class="block relative top-0 left-0 bg-black dark:bg-white rounded-sm w-0 h-0.5 my-1 ease-in-out duration-200 delay-200" :class="{ '!w-full delay-500': !navigationOpen }"></span>
-            </span>
-            <span class="block absolute w-full h-full rotate-45">
-              <span class="block bg-black dark:bg-white rounded-sm ease-in-out duration-200 delay-300 absolute left-2.5 top-0 w-0.5 h-full" :class="{ 'h-0 delay-[0]': !navigationOpen }"></span>
-              <span class="block bg-black dark:bg-white rounded-sm ease-in-out duration-200 delay-400 absolute left-0 top-2.5 w-full h-0.5" :class="{ 'h-0 delay-200': !navigationOpen }"></span>
-            </span>
-          </span>
-        </button>
-      </div>
-
-      <div
-        class="h-0 lg:h-auto invisible lg:visible lg:flex items-center justify-between"
-        :class="{ '!visible bg-white dark:bg-blacksection shadow-solid-5 h-auto max-h-[400px] overflow-y-scroll rounded-md mt-4 p-7.5': navigationOpen }"
-      >
-        <nav>
-          <ul class="text-md font-medium flex lg:items-center flex-col lg:flex-row gap-5 lg:gap-10">
-            <li><a href="/" class="hover:text-primary">Home</a></li>
-            <!--<li><a href="about-us" class="hover:text-primary">About Us</a></li>-->
-            <li><a href="/#howItWorks" class="hover:text-primary">How It Works</a></li>
-            <li><a href="/contact" class="hover:text-primary">Contact Us</a></li>
-          </ul>
-        </nav>
-
-      </div>
-        <div class="flex items-center gap-6 mt-7 lg:mt-0">
-          <!--<div class="mr-1.5 absolute lg:static top-1 right-17" :class="navigationOpen ? '!visible' : '!visible'">-->
-          <!--  <label class="block m-0 relative">-->
-          <!--    <input type="checkbox" class="cursor-pointer w-full h-full opacity-0 absolute top-0 z-50 m-0" />-->
-          <!--    <img class="dark:hidden" src="/images/icon/icon-sun.svg" alt="Sun" />-->
-          <!--    <img class="hidden dark:block" src="/images/icon/icon-moon.svg" alt="Moon" />-->
-          <!--  </label>-->
-          <!--</div>-->
-
-          <button @click="showModal">
-
-        <a href="/get-quote"
-           :class="[
-               stickyMenu ? 'bg-primary hover:bg-primary text-white' : 'border border-primary hover:border-primary  text-primary',
-             'flex items-center justify-center ease-in-out duration-300 text-regular rounded-full py-2.5 px-7.5', ''
-           ]" >Get Quote</a>
-          </button>
+  <Popover class="relative bg-white">
+    <div class="absolute inset-0 shadow z-30 pointer-events-none" aria-hidden="true" />
+    <div class="relative z-20 bg-[#007675]">
+      <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
+        <div>
+          <a href="#" class="flex">
+            <span class="sr-only">FORT REMOTE</span>
+            <img class="h-8 w-auto sm:h-10" src="/images/logo/logo-dark.svg" alt="FORT REMOTE" />
+          </a>
         </div>
+        <div class="-mr-2 -my-2 md:hidden">
+          <PopoverButton class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <span class="sr-only">Open menu</span>
+            <MenuIcon class="h-6 w-6" aria-hidden="true" />
+          </PopoverButton>
+        </div>
+        <div class="hidden md:flex-1 md:flex md:items-center md:justify-between">
+          <PopoverGroup as="nav" class="flex space-x-10">
+            <a href="/" class="text-base font-medium text-white hover:underline"> Home </a>
+            <a href="/#howItWorks" class="text-base font-medium text-white hover:underline"> How it works </a>
+            <a href="/contact" class="text-base font-medium text-white hover:underline"> Contact Us </a>
+
+          </PopoverGroup>
+          <div class="flex items-center md:ml-12">
+            <a href="/get-quote" class="py-2 px-3 border-2 border-white rounded-full font-bold text-white transition-all duration-300 hover:text-black hover:bg-green-200 hover:border-transparent">Get Quote</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
+
+    <transition enter-active-class="duration-200 ease-out" enter-from-class="opacity-0 scale-95" enter-to-class="opacity-100 scale-100" leave-active-class="duration-100 ease-in" leave-from-class="opacity-100 scale-100" leave-to-class="opacity-0 scale-95">
+      <PopoverPanel focus class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+          <div class="pt-5 pb-6 px-5 sm:pb-8">
+            <div class="flex items-center justify-between">
+              <div>
+                <img class="h-8 w-auto" src="/images/logo/logo-light.svg" alt="Workflow" />
+              </div>
+              <div class="-mr-2">
+                <PopoverButton class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500">
+                  <span class="sr-only">Close menu</span>
+                  <XIcon class="h-6 w-6" aria-hidden="true" />
+                </PopoverButton>
+              </div>
+            </div>
+          </div>
+          <div class="py-6 px-5">
+            <div class="grid grid-cols-2 gap-4">
+              <a href="/" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"> Home </a>
+
+              <a href="/#howItWorks" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"> How It Works </a>
+
+              <a href="/contact" class="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"> Contact Us </a>
+            </div>
+          </div>
+        </div>
+      </PopoverPanel>
+    </transition>
+  </Popover>
 </template>
+
+<script>
+import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue'
+import {
+  BookmarkAltIcon,
+  BriefcaseIcon,
+  ChartBarIcon,
+  CheckCircleIcon,
+  CursorClickIcon,
+  DesktopComputerIcon,
+  GlobeAltIcon,
+  InformationCircleIcon,
+  MenuIcon,
+  NewspaperIcon,
+  OfficeBuildingIcon,
+  PhoneIcon,
+  PlayIcon,
+  ShieldCheckIcon,
+  UserGroupIcon,
+  ViewGridIcon,
+  XIcon,
+} from '@heroicons/vue/outline'
+import { ChevronDownIcon } from '@heroicons/vue/solid'
+import CtaButton from "@components/CtaButton.vue";
+
+const solutions = [
+  {
+    name: 'Analytics',
+    description: 'Get a better understanding of where your traffic is coming from.',
+    href: '#',
+    icon: ChartBarIcon,
+  },
+  {
+    name: 'Engagement',
+    description: 'Speak directly to your customers in a more meaningful way.',
+    href: '#',
+    icon: CursorClickIcon,
+  },
+  { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
+  {
+    name: 'Integrations',
+    description: "Connect with third-party tools that you're already using.",
+    href: '#',
+    icon: ViewGridIcon,
+  },
+]
+const callsToAction = [
+  { name: 'Watch Demo', href: '#', icon: PlayIcon },
+  { name: 'View All Products', href: '#', icon: CheckCircleIcon },
+  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
+]
+const company = [
+  { name: 'About', href: '#', icon: InformationCircleIcon },
+  { name: 'Customers', href: '#', icon: OfficeBuildingIcon },
+  { name: 'Press', href: '#', icon: NewspaperIcon },
+  { name: 'Careers', href: '#', icon: BriefcaseIcon },
+  { name: 'Privacy', href: '#', icon: ShieldCheckIcon },
+]
+const resources = [
+  { name: 'Community', href: '#', icon: UserGroupIcon },
+  { name: 'Partners', href: '#', icon: GlobeAltIcon },
+  { name: 'Guides', href: '#', icon: BookmarkAltIcon },
+  { name: 'Webinars', href: '#', icon: DesktopComputerIcon },
+]
+const blogPosts = [
+  {
+    id: 1,
+    name: 'Boost your conversion rate',
+    href: '#',
+    preview: 'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1558478551-1a378f63328e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2849&q=80',
+  },
+  {
+    id: 2,
+    name: 'How to use search engine optimization to drive traffic to your site',
+    href: '#',
+    preview: 'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2300&q=80',
+  },
+]
+
+export default {
+  components: {
+    CtaButton,
+    Popover,
+    PopoverButton,
+    PopoverGroup,
+    PopoverPanel,
+    ChevronDownIcon,
+    MenuIcon,
+    XIcon,
+  },
+  setup() {
+    return {
+      solutions,
+      callsToAction,
+      company,
+      resources,
+      blogPosts,
+    }
+  },
+}
+</script>

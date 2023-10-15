@@ -52,15 +52,15 @@ const items = ref([
 
           <!-- Tab Menues Start -->
           <TabList as="div"
-            class="animate_top border border-stroke dark:border-strokedark dark:bg-blacksection shadow-solid-5 dark:shadow-solid-6 bg-white rounded-[10px] flex flex-wrap md:flex-nowrap md:items-center justify-center lg:gap-7.5 xl:gap-12.5 mb-15 xl:mb-21.5"
+            class="animate_top border border-stroke dark:border-strokedark dark:bg-blacksection shadow-solid-5 dark:shadow-solid-6 bg-white rounded-[10px] flex md:flex-nowrap md:items-center justify-center lg:gap-7.5 xl:gap-12.5 mb-15 xl:mb-21.5"
           >
             <template v-for="(item, index) in items">
                 <Tab v-slot="{ selected }" as="template">
                   <div class="outline-none relative cursor-pointer w-full md:w-auto border-b last:border-0 md:border-0 border-stroke dark:border-strokedark flex items-center gap-4 py-2 xl:py-5 px-6 xl:px-13.5"
                   :class="{ 'active before:w-full before:h-1 before:bg-primary before:absolute before:bottom-0 before:left-0 before:rounded-tl-[4px] before:rounded-tr-[4px]': selected }">
 
-                    <div class="w-12.5 h-12.5 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">
-                      <p class="text-black dark:text-white font-medium text-metatitle3">{{ index+1 }}</p>
+                    <div class="w-8 h-8 md:w-12.5 md:h-12.5 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">
+                      <p class="text-black dark:text-white font-medium">{{ index+1 }}</p>
                     </div>
                     <div class="lg:w-auto md:w-3/5">
                       <h5 class="text-black dark:text-white text-sm xl:text-regular font-medium">{{item.tab_title}}</h5>

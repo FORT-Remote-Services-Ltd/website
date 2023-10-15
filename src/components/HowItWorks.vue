@@ -1,121 +1,52 @@
-<template>
-  <div class="">
-    <div class="py-24 flex flex-col justify-center text-center">
-      <h2 class="font-bold text-3xl xl:text-sectiontitle3 text-black dark:text-white py-8">How it Works</h2>
-      <p>We will help you streamline your operations. Here is how:</p>
-    </div>
-  <ul role="list" class="grid grid-cols-1 mx-60 my-8 gap-20 mt-10 sm:grid-cols-2 lg:grid-cols-2">
-    <li v-for="step in steps" :key="step.id" class="col-span-1 bg-white rounded-b-3xl shadow-2xl divide-y divide-gray-200">
-      <div class="border-t-4 border-teal-500">
-          <button class="bg-teal-600 rounded-b-2xl hover:cursor-pointer text-white px-3 py-2 font-bold uppercase "> {{step.id}} </button>
-      </div>
-
-      <div class="w-full flex items-center justify-between p-6 space-x-6">
-        <div class="flex-1 truncate">
-          <div class="flex justify-around items-center space-x-2">
-<!--            <h3 class="text-gray-900 bg-blue-300 rounded-full h-20 w-20 text-center mt-10 text-sm font-medium truncate">Step 1</h3>-->
-
-<!--            <span class="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full">{{ person.role }}</span>-->
-          </div>
-          <div>
-            <p class="flex font-bold  justify-around mt-1 text-gray-500 text-xl truncate underline">{{ step.title }}</p>
-          </div>
-          <div class="">
-            <p class="whitespace-pre-wrap">{{step.description}}</p>
-          </div>
-
-
-        </div>
-<!--        <img class="w-10 h-10 bg-gray-300 rounded-full flex-shrink-0" :src="person.imageUrl" alt="" />-->
-      </div>
-<!--      <div>-->
-<!--        <div class="-mt-px flex divide-x divide-gray-200">-->
-<!--          <div class="w-0 flex-1 flex">-->
-<!--            <a :href="`mailto:${person.email}`" class="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500">-->
-<!--              &lt;!&ndash;              <MailIcon class="w-5 h-5 text-gray-400" aria-hidden="true" />&ndash;&gt;-->
-<!--              <span class="ml-3">Email</span>-->
-<!--            </a>-->
-<!--          </div>-->
-<!--          <div class="-ml-px w-0 flex-1 flex">-->
-<!--            <a :href="`tel:${person.telephone}`" class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500">-->
-<!--              &lt;!&ndash;              <PhoneIcon class="w-5 h-5 text-gray-400" aria-hidden="true" />&ndash;&gt;-->
-<!--              <span class="ml-3">Call</span>-->
-<!--            </a>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-    </li>
-  </ul>
-  </div>
-</template>
-
-
 <script setup>
+import SvgIcons from "@components/SvgIcons.vue";
+
 
 const steps = [
-        {
-          title: "Consultation and Assessment",
-          id: 'step 1',
-          img: '../images/brand/whatsapp.svg',
-          description:
-              "Contact Us: Start by reaching out to us through our website or via email. Our dedicated team will promptly get in touch with you to schedule an initial consultation.Needs Assessment: During the consultation, we'll discuss your specific business requirements and objectives. This step allows us to understand your unique needs and tailor our services accordingly.",
-        },
-        {
-          title: "Customized Solution Design",
-          id: 'step 2',
-          description:
-              "Service Selection: Based on our assessment, we'll recommend the most suitable services for your business. Whether it's bookkeeping, data entry, or virtual customer care, you'll have a tailored solution.Proposal and Agreement: We'll provide you with a detailed proposal outlining the scope of work, pricing, and service delivery timelines. Once you're satisfied, we'll proceed to create a service agreement.",
-        },
+  {title:'Initial Consultation', description:`Our process begins with a personalized consultation. During this one-on-one discussion, we'll delve into your specific financial needs, whether you're a business or an individual.Understanding your unique circumstances and goals allows us to tailor our services to your exact requirements.`, icon:'consultation'},
+  {title:'Customized Service Plan', description:`Following the consultation, we develop a customized service plan. This plan outlines the scope of our services, the timeline for completion, and transparent pricing. You'll receive a clear and detailed proposal that ensures you know precisely what to expect.`, icon:'plan'},
+  {title:'Secure Data Collection', description:`Once the plan is in place, we facilitate the secure collection of your financial data and relevant documents. You can conveniently upload these files through our encrypted portal or use a method of your preference. Your data's security is paramount to us, and we adhere to stringent data protection standards.`, icon:'security'},
+  {title:'Expert Analysis and Data Entry', description:`With your financial information in our hands, our skilled team of bookkeepers and data entry specialists meticulously analyze and organize the data. We prioritize accuracy and compliance with industry standards and regulations. Every transaction is entered with precision to eliminate errors and maintain data integrity.`, icon:'analysis'},
+  {title:'Cloud-Based Accessibility and Reporting', description:`Our cloud-based accounting system provides you with 24/7 access to your financial records and reports. You can stay informed about your financial status from anywhere in the world. We also provide regular financial reports, including income statements, balance sheets, and cash flow statements, to offer you valuable insights into your financial health.`, icon:'cloud'},
+  {title:'Ongoing Support and Adaptation', description:`Our commitment to your financial success doesn't end with data entry and reporting. We offer ongoing support, readily available for any questions, assistance, or strategic discussions you may require. As your business or personal financial needs evolve, we adapt our services to ensure a continued, effective partnership.`, icon:'support'},
+]
 
-        {
-          title: "Onboarding and" +
-              "Integration Data Collection",
-          id: 'step 3',
-          description:
-              "For bookkeeping and data" +
-              "entry services, we'll work" +
-              "with you to securely gather" +
-              "the necessary information" +
-              "and access to relevant" +
-              "systems. For virtual customer" +
-              "care, we'll align our team" +
-              "with your brand and" +
-              "protocols. Integration Setup: Our technical" +
-              "team will assist with any" +
-              "necessary integrations, ensuring" +
-              "a seamless flow of data and" +
-              "communication.",
-        },
-        {
-          title: "Service DeliveryEfficient Execution",
-          id: 'step 4',
-          description:
-              "Our skilled professionals will handle" +
-              "your bookkeeping, data entry, or virtual customer care tasks efficiently and" +
-              "accurately. You can expect regular updates and reports as agreed upon. Quality Assurance: We maintain rigorous quality control measures to ensure that the services we provide meet our high standards.",
-        },
-        {
-          title: "Success and Growth Measurable Results",
-          id: 'step 5',
-          description:
-              " As we work together," +
-              "you'll begin to see measurable improvements in your operations, financial" +
-              "management, or customer satisfaction. Continual Improvement: We're committed to staying at the forefront of our respective industries, ensuring that you benefit from the latest tools and strategies.",
-        },
-        {
-          title: "Long-Term Partnership Trusted Relationship",
-          id: 'step 6',
-          description:
-              " We aim to build a" +
-              "long-lasting partnership based on trust, reliability, and a shared" +
-              "commitment to your business's success. ",
-        }
-        // Add similar objects for Steps 3 to 7
-        // ...
-      ]
 
 </script>
 
-<style scoped>
-/* Custom styles or Tailwind CSS classes for animations and transitions */
+<template>
+ <div id="howItWorks" class="max-w-7xl rounded-xl mx-auto px-4 md:px-4 xl:px-10 py-10 bg-gradient-to-br from-teal-600 to-emerald-400 text-white">
+  <div class="grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-5">
+    <div class="col-span-6 flex flex-col space-y-4">
+      <h2 class="text-4xl font-bold">Our Process</h2>
+      <p class="text-lg">
+        Discover how we make freelancing a breeze with our simple and transparent process, guiding you from sign-up to project completion. Join us and experience the ease and reliability of freelancing at its best.
+      </p>
+    </div>
+    <div class="col-span-6 bg-red-400 rounded shadow-xl h-[300px] bg-[url('/images/process.jpg')] bg-cover bg-no-repeat relative overflow-clip">
+      <div class="absolute bottom-0 w-full h-[100px] bg-gradient-to-b from-black/0 via-black/50 to-black/100 px-4 py-2 flex align-text-bottom flex-end">
+        <p class="text-lg absolute bottom-5">
+          We turn freelancing into a seamless and hassle-free experience for everyone.
+        </p>
+      </div>
+    </div>
+  </div>
+
+   <div class="grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-5 mt-10">
+     <template v-for="step in steps">
+       <div class="col-span-4 flex flex-col space-y-4">
+         <span id="icon" class="bg-teal-50/40 border border-teal-50 flex items-center justify-center h-12 w-12 rounded-full p-2">
+           <SvgIcons :name="step.icon" />
+         </span>
+         <h4 id="header" class="font-bold text-lg">{{ step.title }}</h4>
+         <p id="content">{{step.description}}</p>
+       </div>
+     </template>
+   </div>
+
+</div>
+</template>
+
+<style>
+
 </style>

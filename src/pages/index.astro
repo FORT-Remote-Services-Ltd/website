@@ -1,18 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import CtaButton from '../components/CtaButton.vue'
-import SvgIcons from '../components/SvgIcons.vue'
+// import SvgIcons from '../components/SvgIcons.vue'
 import HowItWorks from '../components/HowItWorks.vue'
 import FeatureTabs from '../components/FeatureTabs.vue'
 import Faq from '../components/Faq.vue'
 import Flags from '../components/Flags.vue'
-import Testimonials from '../components/Testimonials.vue'
+import FlashCard from '../components/FlashCard.vue'
+// import Testimonials from '../components/Testimonials.vue'
 import { Image } from 'astro:assets';
 import FortImage from '../assets/images/fort.svg'
 import FortExplainerImage from '../assets/images/fort-explainer-01.svg'
 import MissionImage from '../assets/images/fortmission.svg'
 import Workforce from '../assets/images/workforce.jpg'
 import ClientsSlider from '../components/ClientsSlider.vue'
+
+let base = '/images/badges/', badge_names = [
+    'qbo-advanced.svg','qbo-desktop.svg',
+  'qbo-online.svg','qbo-payroll.svg', 'zoho.png',
+    'xero.png'
+]
+const certifications = badge_names.map(name => `${base}${name}`)
 
 ---
 
@@ -249,7 +257,8 @@ import ClientsSlider from '../components/ClientsSlider.vue'
     </div>
 
   </section>
-      <!-- ===== Integrations End ===== -->
+  <!-- ===== Integrations End ===== -->
+
   <!-- ===== Clients Start ===== -->
   <section class="bg-alabaster dark:bg-black border border-x-0 border-y-stroke dark:border-y-strokedark py-3 my-8">
     <div class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%">
@@ -257,6 +266,30 @@ import ClientsSlider from '../components/ClientsSlider.vue'
     </div>
   </section>
   <!-- ===== Clients End ===== -->
+
+   <section>
+     <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200">
+        <h2 class="text-center text-3xl font-extrabold text-gray-900 sm:text-4xl">We are certified by the best</h2>
+      </div>
+     </div>
+     <div class="max-w-3xl mx-auto grid grid-cols-2 lg:grid-cols-3 gap-5">
+       {
+           certifications.map((certification) => {
+             return (
+                 <>
+                     <div class="col-span-1">
+                       <FlashCard>
+                           <img src={certification}>
+                       </FlashCard>
+                     </div>
+                 </>
+             )
+           })
+
+       }
+     </div>
+   </section>
 
       <!-- ===== FAQ Start ===== -->
       <section class="pb-20 lg:pb-25 xl:pb-30 overflow-hidden">

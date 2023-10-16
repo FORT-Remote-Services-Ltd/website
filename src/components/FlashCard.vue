@@ -1,0 +1,69 @@
+<script setup lang="ts">
+
+</script>
+
+<template>
+<div class="flash-card rounded-md bg-gradient-to-br from-teal-600 to-emerald-400">
+  <slot></slot>
+</div>
+</template>
+
+<style>
+.flash-card {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+
+.flash-card:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.flash-card:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.flash-card::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+</style>

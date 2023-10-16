@@ -33,10 +33,11 @@ const steps = [
   </div>
 
    <div class="grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-5 mt-10">
-     <template v-for="step in steps">
+     <template v-for="(step, i) in steps">
        <div class="col-span-4 flex flex-col space-y-4">
-         <span id="icon" class="bg-teal-50/40 border border-teal-50 flex items-center justify-center h-12 w-12 rounded-full p-2">
-           <SvgIcons :name="step.icon" />
+         <span id="icon" class="bg-teal-50/40 border border-teal-50 flex items-center justify-center h-12 w-12 font-bold text-white rounded-full p-2">
+           {{i+1}}
+           <!--<SvgIcons :name="step.icon" />-->
          </span>
          <h4 id="header" class="font-bold text-lg">{{ step.title }}</h4>
          <p id="content">{{step.description}}</p>

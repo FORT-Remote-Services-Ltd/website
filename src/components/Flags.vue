@@ -29,20 +29,20 @@ import { DotsVerticalIcon } from '@heroicons/vue/solid'
 import "flag-icons/css/flag-icons.min.css";
 
 const projects = [
-  { country: 'India', initials: 'GA', code: 'fi fi-in', href: '#', members: 16, bgColor: 'bg-white' },
-  { country: 'Poland', initials: 'CD',code: 'fi fi-pl', href: '#', members: 12, bgColor: 'bg-white' },
-  { country: 'Philippines', initials: 'CD',code: 'fi fi-ph', href: '#', members: 12, bgColor: 'bg-white' },
-  { country: 'Ukraine', initials: 'CD',code: 'fi fi-ua', href: '#', members: 12, bgColor: 'bg-white' },
-  { country: 'United States', initials: 'CD',code: 'fi fi-us', href: '#', members: 12, bgColor: 'bg-white' },
-  { country: 'Mexico', initials: 'CD',code: 'fi fi-mx', href: '#', members: 12, bgColor: 'bg-white' },
-  { country: 'Canada', initials: 'CD',code: 'fi fi-ca', href: '#', members: 12, bgColor: 'bg-white' },
-  { country: 'Argentina', initials: 'CD',code: 'fi fi-ar', href: '#', members: 12, bgColor: 'bg-white' },
-  { country: 'United Kingdom', initials: 'CD',code: 'fi fi-gb', href: '#', members: 12, bgColor: 'bg-white' },
-  { country: 'Brazil', initials: 'CD',code: 'fi fi-br', href: '#', members: 12, bgColor: 'bg-white' },
-  { country: 'Australia', initials: 'CD',code: 'fi fi-mx', href: '#', members: 12, bgColor: 'bg-white' },
-  { country: 'South Africa', initials: 'CD',code: 'fi fi-mx', href: '#', members: 12, bgColor: 'bg-white' },
-  { country: 'Mexico', initials: 'CD',code: 'fi fi-mx', href: '#', members: 12, bgColor: 'bg-white' },
-  { country: 'Mexico', initials: 'CD',code: 'fi fi-mx', href: '#', members: 12, bgColor: 'bg-white' },
+  { country: 'Argentina', initials: 'CD',code: 'fi fi-ar', href: '#', bgColor: 'bg-white' },
+  { country: 'Australia', initials: 'CD',code: 'fi fi-au', href: '#', bgColor: 'bg-white' },
+  { country: 'Brazil', initials: 'CD',code: 'fi fi-br', href: '#', bgColor: 'bg-white' },
+  { country: 'Canada', initials: 'CD',code: 'fi fi-ca', href: '#', bgColor: 'bg-white' },
+  { country: 'India', initials: 'GA', code: 'fi fi-in', href: '#', bgColor: 'bg-white' },
+  { country: 'Ireland', initials: 'CD',code: 'fi fi-ie', href: '#', bgColor: 'bg-white' },
+  { country: 'Kenya', initials: 'CD',code: 'fi fi-ke', href: '#', bgColor: 'bg-white' },
+  { country: 'Mexico', initials: 'CD',code: 'fi fi-mx', href: '#', bgColor: 'bg-white' },
+  { country: 'Philippines', initials: 'CD',code: 'fi fi-ph', href: '#', bgColor: 'bg-white' },
+  { country: 'Poland', initials: 'CD',code: 'fi fi-pl', href: '#', bgColor: 'bg-white' },
+  { country: 'South Africa', initials: 'CD',code: 'fi fi-sa', href: '#', bgColor: 'bg-white' },
+  { country: 'Ukraine', initials: 'CD',code: 'fi fi-ua', href: '#', bgColor: 'bg-white' },
+  { country: 'United Kingdom', initials: 'CD',code: 'fi fi-gb', href: '#', bgColor: 'bg-white' },
+  { country: 'United States', initials: 'CD',code: 'fi fi-us', href: '#', bgColor: 'bg-white' },
 ]
 
 export default {

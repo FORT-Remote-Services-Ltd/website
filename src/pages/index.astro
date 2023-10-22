@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import CtaButton from '../components/CtaButton.vue'
-// import SvgIcons from '../components/SvgIcons.vue'
+import SvgIcons from '../components/SvgIcons.vue'
 import HowItWorks from '../components/HowItWorks.vue'
 import FeatureTabs from '../components/FeatureTabs.vue'
 import Faq from '../components/Faq.vue'
@@ -22,6 +22,28 @@ let base = '/images/badges/', badge_names = [
 ]
 const certifications = badge_names.map(name => `${base}${name}`)
 
+const acronym: {letter: string, description:string, icon?: string }[] = [
+  {letter:"F", description:"The 'F' in FORT represents 'Financial Mastery.' It symbolizes our deep understanding of financial intricacies. We're not just data entry professionals; we're financial experts who navigate the complexities of your finances with precision."},
+  {letter:"O", description:"The 'O' in FORT stands for 'Operational Excellence.' We're not here to merely record data; we optimize your financial operations. Our approach streamlines processes, enhances efficiency, and ensures compliance."},
+  {letter:"R", description:"The 'R' emphasizes 'Robust Reporting.' We don't just crunch numbers; we transform data into actionable insights. Our reporting goes beyond the ordinary, offering comprehensive financial visibility."},
+  {letter:"T", description:"The 'T' signifies 'Technical Prowess.' In the digital age, data management requires advanced techniques. FORT leverages cutting-edge technology, ensuring your financial data is secure, accurate, and accessible."},
+]
+
+const our_story_points: {description:string}[] = [
+  {description:"🌍 Worldwide Presence: What began as a regional endeavor has transformed into a global journey. Fort Remote Services has expanded its reach far beyond borders, serving clients across continents."},
+  {description:"💼 Over 1,000 Happy Clients: It's not about the numbers, but they do tell a story. With a dedicated team and unwavering commitment to excellence, we've earned the trust and satisfaction of over 1,000 clients worldwide."},
+  {description:"📆 A Decade of Excellence: For over a decade, we've been on a relentless pursuit of perfection. Our journey, which began ten years ago, has been marked by continuous learning, growth, and innovation."},
+  {description:"📈 Scaling Our Arsenal: Starting with a few software tools, we've grown into a technology powerhouse. Our toolkit now boasts a diverse array of cutting-edge software solutions, enabling us to tackle even the most complex tasks with ease."},
+  {description:"📚 Evolving from Bookkeeping to Data Entry: We've come a long way from our roots in bookkeeping. Today, we offer a comprehensive suite of services, including precise and efficient data entry. The journey has been about evolution, expansion, and staying ahead of the digital curve."},
+]
+
+const why_choose_us_points: {title: string,description:string, icon:string}[] = [
+  {title:"Custom-Tailored Solutions", icon:"choose-custom", description:"We understand that every business is unique, and one size doesn't fit all. Our services are fully customizable, aligning precisely with your business needs, size, and goals."},
+  {title:"Cost-Effective Solutions", icon:"choose-save", description:"By outsourcing your remote services to us, you gain a cost-effective advantage. Say goodbye to unnecessary overhead costs. With Fort, you pay only for the services you need, precisely when you need them."},
+  {title:"Security and Compliance", icon:"choose-secure", description:"We make your data security our top priority. Your sensitive information is handled with the utmost care, and we rigorously adhere to industry standards and regulations, ensuring the safety of your business's most valuable asset."},
+  {title:"Continuous Improvement", icon:"choose-continuous", description:"We're not just bookkeepers; we're dedicated to being industry leaders. Our team continually updates their skills and knowledge to provide you with the best, most innovative solutions possible. Your business deserves nothing less."},
+  {title:"Scalability", icon:"choose-scalable", description:"As your business grows, we're right there with you. Our services are designed to scale alongside your needs. Whether you require more bookkeeping hours, additional data entry support, or expanded customer care coverage, we've got you covered. Your growth is our opportunity."},
+]
 ---
 
 <Layout title="Welcome to Astro.">
@@ -58,39 +80,64 @@ const certifications = badge_names.map(name => `${base}${name}`)
   <!-- ===== About Start ===== -->
   <section id="about" class="py-20 overflow-hidden">
     <div class="mx-auto max-w-c-1235 px-4 md:px-10 xl:px-20">
-      <div class="flex items-center gap-8 lg:gap-32.5">
-        <div class="animate_left hidden md:block md:w-1/2">
-           <Image src={FortExplainerImage} alt="Fort Remote Services | Who We are"/>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+        <div class="col-span-6 row-start-2 lg:row-start-auto flex flex-col justify-start px-5">
+          <img src="/images/logo/logo-light.svg" class="h-16">
+          <div class="border-l-2 border-dashed mt-4">
+              {
+                acronym.map(letter => {
+                  return (
+                      <>
+                        <div class="flex space-x-2 py-2 -ml-6.5">
+                          <div class="flex items-center justify-center h-12 w-12 shrink-0 grow-0 bg-teal-100 rounded-full overflow-hidden">
+                            <div class="wave"></div>
+                            <span class="absolute before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1 bg-gradient-to-r from-teal-400 to-yellow-200 bg-clip-text text-transparent text-2xl font-black">
+                              {letter.letter}
+                            </span>
+                          </div>
+                          <p class="text-slate-500">
+                            {letter.description}
+                          </p>
+                        </div>
+                      </>
+                  )
+                })
+            }
+          </div>
         </div>
-        <div class="animate_right md:w-1/2">
-          <h4 class="text-black dark:text-white font-medium uppercase">
-            about us
-          </h4>
-          <h2 class="relative font-bold  text-black dark:text-white text-3xl xl:text-hero mb-6">
-            Who We Are
-            <span class="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1"></span>
-          </h2>
-          <div class="mt-7.5 flex items-center gap-5">
-            <div class="w-5/6">
-              <p class="text-lg">Welcome to FORT Remote, your trusted
-                partner for remote business support
-                services. With a strong commitment to
-                excellence and a team of dedicated
-                professionals, we have been helping
-                businesses worldwide streamline their
-                operations and enhance their efficiency
-                since for over ten years.</p>
+        <div class="col-span-6 row-start-1 lg:row-start-auto">
+          <div class="">
+            <h4 class="text-black dark:text-white font-medium uppercase">
+              About Us
+            </h4>
+            <h2 class="relative font-bold  text-black dark:text-white text-3xl xl:text-hero mb-6">
+              Who  <span class="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">We Are</span>
+              <span class="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1"></span>
+            </h2>
+            <div class="mt-7.5 flex items-center gap-5">
+              <div class="lg:w-5/6">
+                <p class="text-lg">
+                  At FORT, we take pride in our unique identity – an acronym that signifies the core values and expertise we bring to remote bookkeeping and data entry services.
+                </p>
+                <div class="text-sm bg-gradient-to-r from-teal-400 to-yellow-200 p-2 rounded flex gap-4 mt-5">
+                  <span class="flex justify-between items-center rounded-full grow-0 shrink-0 h-8 w-8 bg-white p-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="fill-slate-500"><g><path d="M12 3.457a.75.75 0 0 1-.75-.75V.75a.75.75 0 0 1 1.5 0v1.957a.75.75 0 0 1-.75.75zM18.571 6.179a.75.75 0 0 1-.53-1.281l1.384-1.384a.75.75 0 1 1 1.061 1.061l-1.384 1.384a.752.752 0 0 1-.531.22zM23.25 12.75h-1.957a.75.75 0 0 1 0-1.5h1.957a.75.75 0 0 1 0 1.5zM19.955 20.705a.744.744 0 0 1-.53-.22l-1.384-1.384a.75.75 0 1 1 1.061-1.061l1.384 1.384a.75.75 0 0 1-.531 1.281zM4.045 20.705a.75.75 0 0 1-.53-1.281l1.384-1.384a.75.75 0 1 1 1.061 1.061l-1.384 1.384a.748.748 0 0 1-.531.22zM2.707 12.75H.75a.75.75 0 0 1 0-1.5h1.957a.75.75 0 0 1 0 1.5zM5.429 6.179a.744.744 0 0 1-.53-.22L3.515 4.575a.75.75 0 1 1 1.061-1.061L5.96 4.898a.75.75 0 0 1-.531 1.281zM15 21v1.25c0 .96-.79 1.75-1.75 1.75h-2.5C9.91 24 9 23.36 9 21.96V21zM16.41 6.56a7.026 7.026 0 0 0-5.91-1.4c-2.65.55-4.8 2.71-5.35 5.36-.56 2.72.46 5.42 2.64 7.07.59.44 1 1.12 1.14 1.91v.01c.02-.01.05-.01.07-.01h6c.02 0 .03 0 .05.01v-.01c.14-.76.59-1.46 1.28-2A6.985 6.985 0 0 0 19 12c0-2.12-.94-4.1-2.59-5.44zm-.66 5.94c-.41 0-.75-.34-.75-.75C15 10.23 13.77 9 12.25 9c-.41 0-.75-.34-.75-.75s.34-.75.75-.75a4.26 4.26 0 0 1 4.25 4.25c0 .41-.34.75-.75.75z" opacity="1" class=""></path><path d="M8.93 19.5H9c-.02 0-.05 0-.07.01zM15.05 19.5v.01c-.02-.01-.03-.01-.05-.01z" opacity="1" class=""></path></g></svg>
+                  </span>
+                  Our core strength lies in our professional and competent team, meticulously trained to handle your bookkeeping and data entry needs with precision and care. We don't just serve; we partner. In choosing FORT, you're selecting a partner that combines Financial Mastery, Operational Excellence, Robust Reporting, and Technical Prowess to deliver exceptional remote bookkeeping and data entry services. Your success is our mission.
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </section>
   <!-- ===== About End ===== -->
   <!-- ===== Our Story Start ===== -->
   <section class="pb-20 lg:pb-25 xl:pb-30 overflow-hidden">
     <div class="mx-auto max-w-c-1235 px-4 md:px-10 xl:px-20">
-      <div class="flex items-center gap-8 lg:gap-32.5">
+      <div class="flex gap-8 lg:gap-32.5">
         <div class="animate_right md:w-1/2">
           <h4 class="text-black dark:text-white font-medium uppercase">
             Our Journey
@@ -99,103 +146,78 @@ const certifications = badge_names.map(name => `${base}${name}`)
             Our  <span class="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">Story</span>
             <span class="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1"></span>
           </h2>
-          <!--                    <p>Welcome to FORT Remote, your trusted-->
-          <!--                        partner for remote business support-->
-          <!--                        services. </p>-->
+
 
           <div class="mt-7.5 flex items-center gap-5">
-            <!--                        <div class="w-15 h-15 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">-->
-            <!--                            <p class="text-black dark:text-white font-semibold text-metatitle2">01</p>-->
-            <!--                        </div>-->
             <div class="w-5/6">
-              <!--                            <h5 class="text-black dark:text-white text-metatitle2 mb-0.5">Cost-Effective Solutions</h5>&ndash;&gt;-->
-              <p class="text-lg">FORT Remote was founded with a precise vision -
-                to empower businesses of all sizes with reliable
-                and cost-effective remote support services. We
-                recognized that in an increasingly digital world,
-                companies needed a dependable partner to
-                handle critical tasks like bookkeeping, data entry,
-                and customer care without the need for an
-                in-house team.</p>
+
+              <p class="text-lg">
+                From One Region to a Global Force: Unleashing the Power of Digital Bookkeeping and Data Entry Services
+              </p>
+              {
+                  our_story_points.map(point => {
+                    return (
+                      <>
+                        <p class="text-sm text-slate-500 py-2">{point.description}</p>
+                      </>
+                    )
+                  })
+              }
             </div>
           </div>
-          <!--                    <div class="mt-7.5 flex items-center gap-5">-->
-          <!--                        <div class="w-15 h-15 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">-->
-          <!--                            <p class="text-black dark:text-white font-semibold text-metatitle2">02</p>-->
-          <!--                        </div>-->
-          <!--                        <div class="w-3/4">-->
-          <!--                            <h5 class="text-black dark:text-white text-metatitle2 mb-0.5">Cost-Effective Solutions</h5>-->
-          <!--                            <p>Outsource for cost savings, pay only for needed remote services.</p>-->
-          <!--                        </div>-->
-          <!--                    </div>-->
         </div>
         <div class="animate_left hidden md:block md:w-1/2">
           <Image src={Workforce} alt="Fort Remote Services | Workforce"/>
+
+          <div class="italic mt-4 font-medium">
+            Our story is one of transformation, growth, and relentless dedication to our clients' needs. At Fort Remote Services, we're not just about numbers; we're about the incredible journey behind them. Thank you for being a part of our story.
+          </div>
         </div>
       </div>
     </div>
   </section>
   <!-- ===== Our Story End ===== -->
 
-  <!-- ===== Mission Start ===== -->
+  <!-- ===== Why choose Start ===== -->
   <section class="pb-20 lg:pb-25 xl:pb-30 overflow-hidden">
-    <div class="mx-auto max-w-c-1235 px-4 md:px-10 xl:px-20">
-      <div class="flex items-center gap-8 lg:gap-32.5">
-        <div class="animate_left hidden md:block md:w-1/2">
-          <Image src={MissionImage} alt="Fort Remote Mission"/>
+    <div class="max-w-7xl rounded-xl mx-auto px-4 md:px-4 xl:px-10 py-10 bg-gradient-to-br from-teal-600 to-emerald-400 text-white">
+      <div class="">
+        <div class="mx-auto text-center">
+            <h4 class=" dark:text-white font-medium uppercase">
+              Why
+            </h4>
+            <h2 class="relative font-bold text-3xl xl:text-hero mb-6">
+              Choose  <span class="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg2 dark:before:bg-titlebgdark before:-z-1">Us</span>
+              <span class="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1"></span>
+            </h2>
         </div>
-        <div class="animate_right md:w-1/2">
-          <h4 class="text-black dark:text-white font-medium uppercase">
-            Our Purpose
-          </h4>
-          <h2 class="relative font-bold  text-black dark:text-white text-3xl xl:text-hero mb-6">
-            Our Mission
-            <span class="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1"></span>
-          </h2>
-          <!--                    <p>Welcome to FORT Remote, your trusted-->
-          <!--                        partner for remote business support-->
-          <!--                        services. </p>-->
+      <div>
+       <p class="lg:w-1/2 text-center mx-auto">
+         At Fort Remote Services, your success is our pledge. As your trusted partner in bookkeeping and data entry, we offer custom-tailored, cost-effective, and secure solutions, ensuring a future of success uniquely crafted for you.
+       </p>
 
-          <div class="mt-7.5 flex items-center gap-5">
-            <!--                        <div class="w-15 h-15 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">-->
-            <!--                            <p class="text-black dark:text-white font-semibold text-metatitle2">01</p>-->
-            <!--                        </div>-->
-            <div class="w-3/4">
-              <!--                            <h5 class="text-black dark:text-white text-metatitle2 mb-0.5">Cost-Effective Solutions</h5>&ndash;&gt;-->
-              <p>Our mission is simple yet profound: To
-                enable businesses to thrive in the
-                digital age by providing exceptional
-                remote tools and expertise they need
-                to excel in their respective industries.
+        <div class="grid gap-5 grid-cols-1 lg:grid-cols-3 mt-8">
+          {why_choose_us_points.map(point => {
+            return (
+                <>
+                  <div class="col-span-1 flex gap-2">
+                    <span class="flex justify-between items-center rounded-full grow-0 shrink-0 h-12 w-12 p-2 bg-white border-2 border-teal-600 shadow">
+                      <SvgIcons name={point.icon} />
+                    </span>
+                    <div>
+                      <h5 class="font-medium">{point.title}</h5>
+                      <p class="text-sm text-slate-200">{point.description}</p>
+                    </div>
+                  </div>
+                </>
+            )
 
-                We believe that success is built on a
-                foundation of efficiency, accuracy, and
-                outstanding customer experiences.
-
-                We are committed to delivering
-                exceptional services that free our clients
-                from administrative burdens and allow
-                them to focus on growth and innovation.
-
-                We are driven by this mission every day,
-                and it guides everything we do.</p>
-            </div>
-          </div>
-          <!--                    <div class="mt-7.5 flex items-center gap-5">-->
-          <!--                        <div class="w-15 h-15 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">-->
-          <!--                            <p class="text-black dark:text-white font-semibold text-metatitle2">02</p>-->
-          <!--                        </div>-->
-          <!--                        <div class="w-3/4">-->
-          <!--                            <h5 class="text-black dark:text-white text-metatitle2 mb-0.5">Cost-Effective Solutions</h5>-->
-          <!--                            <p>Outsource for cost savings, pay only for needed remote services.</p>-->
-          <!--                        </div>-->
-          <!--                    </div>-->
+          })}
         </div>
-
       </div>
     </div>
   </section>
-  <!-- ===== Mission End ===== -->
+  <!-- ===== Why choose End ===== -->
 
       <!-- ===== Features Tab Start ===== -->
       <FeatureTabs client:only="vue" />
@@ -320,6 +342,42 @@ const certifications = badge_names.map(name => `${base}${name}`)
 </Layout>
 
 <style>
+  .wave{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #3e79cb;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px rgba(0,0,0,.5);
+}
+.wave:after, .wave:before{
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-75%);
+  background: #000;
+}
+.wave:before{
+  border-radius: 45%;
+  background: rgb(17, 154, 145);
+  animation: animate 5s linear infinite;
+}
+.wave:after{
+  border-radius: 40%;
+  background: rgba(17, 154, 145, 0.55);
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0%{
+    transform: translate(-50%,-75%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-50%,-75%) rotate(360deg);
+  }
+}
 .faq-cta {
   --primary-color: rgb(27, 42, 40);
   --secondary-color: #fff;

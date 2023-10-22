@@ -21,6 +21,10 @@ const service_specifics = ref({
     {name:'Customized Reporting', description:'Creating custom financial reports tailored to a client\'s specific needs and preferences.'},
   ],
   data_entry: [
+    {name:'Online Data Entry', description:'Inputting data from various online sources into databases, spreadsheets, or content management systems. This includes forms processing, online surveys, and e-commerce data entry.'},
+    {name:'Medical and Healthcare Data Entry', description:'Healthcare providers often outsource data entry services to manage patient records, medical billing, insurance claims, and other healthcare-related data.'},
+    {name:'Financial Data Entry', description:'Financial institutions and businesses require data entry for tasks like processing invoices, payroll data entry, expense reports, and accounting records.'},
+    {name:'E-commerce Product Data Entry', description:'Online retailers need product data entry services to upload product details, prices, descriptions, and images to their e-commerce.'},
     {name:'Real Estate Data Entry', description:'Real estate companies and agencies outsource data entry to manage property listings, transaction records, and client information.'},
     {name:'Legal Data Entry', description:'Law firms and legal departments outsource data entry for tasks like case documentation, contract management, and legal research.'},
     {name:'Catalog Data Entry', description:'Creating and maintaining product catalogs, including updating prices, descriptions, and availability.'},

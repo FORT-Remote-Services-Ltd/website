@@ -48,8 +48,8 @@ const why_choose_us_points: {title: string,description:string, icon:string}[] = 
 	 <!-- ===== Hero Start ===== -->
       <section class="pt-16 xl:pt-24 pb-20 xl:pb-25 overflow-hidden bg-[#007675]">
         <div class="mx-auto max-w-c-1390 px-4 md:px-10 xl:px-20">
-          <div class="flex lg:items-center lg:gap-8 xl:gap-32.5">
-            <div class="animate_left md:w-1/2 text-white">
+          <div class="grid grid-cols-1 lg:grid-cols-12 lg:items-center lg:gap-8 xl:gap-32.5">
+            <div class="col-span-6 text-white">
               <h1 class="dark:text-white text-3xl xl:text-7xl font-bold mb-5">
                 Unlock Efficiency, Accuracy, and
                 <span class="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1 bg-gradient-to-r from-teal-400 to-yellow-200 bg-clip-text text-transparent">Excellence</span>
@@ -60,13 +60,13 @@ const why_choose_us_points: {title: string,description:string, icon:string}[] = 
                  <CtaButton class="text-lg rounded-full w-fit">Get Quote</CtaButton>
               </div>
             </div>
-            <div class="animate_right md:w-1/2 hidden lg:block">
-              <div class="relative 2xl:-mr-7.5">
+            <div class="col-span-6 hidden lg:block">
+              <div class="relative lg:w-3/4">
                 <img src="/images/shape/shape-01.png" alt="shape" class="absolute -left-11.5 top-0" />
                 <img src="/images/shape/shape-02.svg" alt="shape" class="absolute right-0 bottom-0" />
                 <img src="/images/shape/shape-03.svg" alt="shape" class="absolute -right-6.5 bottom-0" />
                 <div>
-                  <img src={FortImage.src} alt="Fort Remote Services"/>
+                  <Image src={FortImage} alt="Fort Remote Services"/>
                 </div>
               </div>
             </div>

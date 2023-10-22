@@ -5,7 +5,7 @@
     <div class="relative z-20 bg-[#007675]">
       <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
         <div>
-          <a href="#" class="flex">
+          <a href="/" class="flex">
             <span class="sr-only">FORT REMOTE</span>
             <img class="h-8 w-auto sm:h-10" src="/images/logo/logo-dark.svg" alt="FORT REMOTE" />
           </a>

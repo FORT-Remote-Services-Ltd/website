@@ -10,8 +10,6 @@ import FlashCard from '../components/FlashCard.vue'
 // import Testimonials from '../components/Testimonials.vue'
 import { Image } from 'astro:assets';
 import FortImage from '../assets/images/fort.svg'
-import FortExplainerImage from '../assets/images/fort-explainer-01.svg'
-import MissionImage from '../assets/images/fortmission.svg'
 import Workforce from '../assets/images/workforce.jpg'
 import ClientsSlider from '../components/ClientsSlider.vue'
 
@@ -68,7 +66,7 @@ const why_choose_us_points: {title: string,description:string, icon:string}[] = 
                 <img src="/images/shape/shape-02.svg" alt="shape" class="absolute right-0 bottom-0" />
                 <img src="/images/shape/shape-03.svg" alt="shape" class="absolute -right-6.5 bottom-0" />
                 <div>
-                  <Image src={FortImage} alt="Fort Remote Services"/>
+                  <Image is:raw src={FortImage} alt="Fort Remote Services"/>
                 </div>
               </div>
             </div>

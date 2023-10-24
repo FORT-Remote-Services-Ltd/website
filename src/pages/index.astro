@@ -21,10 +21,10 @@ let base = '/images/badges/', badge_names = [
 const certifications = badge_names.map(name => `${base}${name}`)
 
 const acronym: {letter: string, description:string, icon?: string }[] = [
-  {letter:"F", description:"The 'F' in FORT represents 'Financial Mastery.' It symbolizes our deep understanding of financial intricacies. We're not just data entry professionals; we're financial experts who navigate the complexities of your finances with precision."},
-  {letter:"O", description:"The 'O' in FORT stands for 'Operational Excellence.' We're not here to merely record data; we optimize your financial operations. Our approach streamlines processes, enhances efficiency, and ensures compliance."},
-  {letter:"R", description:"The 'R' emphasizes 'Robust Reporting.' We don't just crunch numbers; we transform data into actionable insights. Our reporting goes beyond the ordinary, offering comprehensive financial visibility."},
-  {letter:"T", description:"The 'T' signifies 'Technical Prowess.' In the digital age, data management requires advanced techniques. FORT leverages cutting-edge technology, ensuring your financial data is secure, accurate, and accessible."},
+  {letter:"F", description:"<b class='text-teal-700'>The 'F' in FORT represents 'Financial Mastery'</b>. It symbolizes our deep understanding of financial intricacies. We're not just data entry professionals; we're financial experts who navigate the complexities of your finances with precision."},
+  {letter:"O", description:"<b class='text-teal-700'>The 'O' in FORT stands for 'Operational Excellence'</b>. We're not here to merely record data; we optimize your financial operations. Our approach streamlines processes, enhances efficiency, and ensures compliance."},
+  {letter:"R", description:"<b class='text-teal-700'>The 'R' emphasizes 'Robust Reporting'</b>. We don't just crunch numbers; we transform data into actionable insights. Our reporting goes beyond the ordinary, offering comprehensive financial visibility."},
+  {letter:"T", description:"<b class='text-teal-700'>The 'T' signifies 'Technical Prowess'</b>. In the digital age, data management requires advanced techniques. FORT leverages cutting-edge technology, ensuring your financial data is secure, accurate, and accessible."},
 ]
 
 const our_story_points: {title:string, description:string}[] = [
@@ -92,9 +92,7 @@ const why_choose_us_points: {title: string,description:string, icon:string}[] = 
                               {letter.letter}
                             </span>
                           </div>
-                          <p class="text-slate-500">
-                            {letter.description}
-                          </p>
+                          <p class="text-slate-500" set:html={letter.description}></p>
                         </div>
                       </>
                   )
@@ -116,12 +114,6 @@ const why_choose_us_points: {title: string,description:string, icon:string}[] = 
                 <p class="text-lg">
                   At FORT, we take pride in our unique identity – an acronym that signifies the core values and expertise we bring to remote bookkeeping and data entry services.
                 </p>
-                <div class="text-sm bg-gradient-to-r from-teal-400 to-yellow-200 p-2 rounded flex gap-4 mt-5">
-                  <span class="flex justify-between items-center rounded-full grow-0 shrink-0 h-8 w-8 bg-white p-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="fill-slate-500"><g><path d="M12 3.457a.75.75 0 0 1-.75-.75V.75a.75.75 0 0 1 1.5 0v1.957a.75.75 0 0 1-.75.75zM18.571 6.179a.75.75 0 0 1-.53-1.281l1.384-1.384a.75.75 0 1 1 1.061 1.061l-1.384 1.384a.752.752 0 0 1-.531.22zM23.25 12.75h-1.957a.75.75 0 0 1 0-1.5h1.957a.75.75 0 0 1 0 1.5zM19.955 20.705a.744.744 0 0 1-.53-.22l-1.384-1.384a.75.75 0 1 1 1.061-1.061l1.384 1.384a.75.75 0 0 1-.531 1.281zM4.045 20.705a.75.75 0 0 1-.53-1.281l1.384-1.384a.75.75 0 1 1 1.061 1.061l-1.384 1.384a.748.748 0 0 1-.531.22zM2.707 12.75H.75a.75.75 0 0 1 0-1.5h1.957a.75.75 0 0 1 0 1.5zM5.429 6.179a.744.744 0 0 1-.53-.22L3.515 4.575a.75.75 0 1 1 1.061-1.061L5.96 4.898a.75.75 0 0 1-.531 1.281zM15 21v1.25c0 .96-.79 1.75-1.75 1.75h-2.5C9.91 24 9 23.36 9 21.96V21zM16.41 6.56a7.026 7.026 0 0 0-5.91-1.4c-2.65.55-4.8 2.71-5.35 5.36-.56 2.72.46 5.42 2.64 7.07.59.44 1 1.12 1.14 1.91v.01c.02-.01.05-.01.07-.01h6c.02 0 .03 0 .05.01v-.01c.14-.76.59-1.46 1.28-2A6.985 6.985 0 0 0 19 12c0-2.12-.94-4.1-2.59-5.44zm-.66 5.94c-.41 0-.75-.34-.75-.75C15 10.23 13.77 9 12.25 9c-.41 0-.75-.34-.75-.75s.34-.75.75-.75a4.26 4.26 0 0 1 4.25 4.25c0 .41-.34.75-.75.75z" opacity="1" class=""></path><path d="M8.93 19.5H9c-.02 0-.05 0-.07.01zM15.05 19.5v.01c-.02-.01-.03-.01-.05-.01z" opacity="1" class=""></path></g></svg>
-                  </span>
-                  Our core strength lies in our professional and competent team, meticulously trained to handle your bookkeeping and data entry needs with precision and care. We don't just serve; we partner. In choosing FORT, you're selecting a partner that combines Financial Mastery, Operational Excellence, Robust Reporting, and Technical Prowess to deliver exceptional remote bookkeeping and data entry services. Your success is our mission.
-                </div>
               </div>
             </div>
           </div>

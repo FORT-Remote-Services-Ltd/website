@@ -1,5 +1,4 @@
 <script>
-
 import emailJs from '@emailjs/browser';
 import {ref} from 'vue';
 import Toast from "./Toast.vue";
@@ -21,7 +20,7 @@ export default {
     })
 
     //form
-    const name = ref(' ')
+    const name = ref('')
     const phone = ref('')
     const number = ref('')
     const zip = ref('')
@@ -107,14 +106,14 @@ export default {
               type="text"
               v-model="name"
               placeholder="Full name"
-              class="w-full lg:w-1/2 bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
+              class="w-full lg:w-1/2 bg-transparent border-b focus:border-teal-600 border-stroke dark:border-strokedark focus-visible:outline-none dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white rounded"
           />
 
           <input
               type="email"
               v-model="email"
               placeholder="Email address"
-              class="w-full lg:w-1/2 bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
+              class="w-full lg:w-1/2 bg-transparent border-b focus:border-teal-600 border-stroke dark:border-strokedark focus-visible:outline-none dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white rounded"
           />
         </div>
 
@@ -123,14 +122,14 @@ export default {
               type="text"
               v-model="subject"
               placeholder="Subject"
-              class="w-full lg:w-1/2 bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
+              class="w-full lg:w-1/2 bg-transparent border-b focus:border-teal-600 border-stroke dark:border-strokedark focus-visible:outline-none dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white rounded"
           />
 
           <input
               type="text"
               v-model="phone"
               placeholder="Phone number"
-              class="w-full lg:w-1/2 bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
+              class="w-full lg:w-1/2 bg-transparent border-b focus:border-teal-600 border-stroke dark:border-strokedark focus-visible:outline-none dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white rounded rounded"
           />
         </div>
 
@@ -139,14 +138,14 @@ export default {
               type="text"
               v-model="country"
               placeholder="Country"
-              class="w-full lg:w-1/2 bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
+              class="w-full lg:w-1/2 bg-transparent border-b focus:border-teal-600 border-stroke dark:border-strokedark focus-visible:outline-none dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white rounded"
           />
 
           <input
               type="text"
               v-model="state"
               placeholder="State"
-              class="w-full lg:w-1/2 bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
+              class="w-full lg:w-1/2 bg-transparent border-b focus:border-teal-600 border-stroke dark:border-strokedark focus-visible:outline-none dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white rounded"
           />
         </div>
 
@@ -155,14 +154,14 @@ export default {
               type="number"
               v-model="number"
               placeholder="Personal Contact"
-              class="w-full lg:w-1/2 bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
+              class="w-full lg:w-1/2 bg-transparent border-b focus:border-teal-600 border-stroke dark:border-strokedark focus-visible:outline-none dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white rounded"
           />
 
           <input
               type="number"
               v-model="zip"
               placeholder="Zip Code"
-              class="w-full lg:w-1/2 bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
+              class="w-full lg:w-1/2 bg-transparent border-b focus:border-teal-600 border-stroke dark:border-strokedark focus-visible:outline-none dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white rounded"
           />
         </div>
 
@@ -171,7 +170,7 @@ export default {
                       placeholder="Message"
                       v-model="message"
                       rows="4"
-                      class="w-full bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white"
+                      class="w-full bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white"
                   ></textarea>
         </div>
 

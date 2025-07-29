@@ -8,7 +8,7 @@ COPY . .
 RUN npm run build
 
 # Production
-FROM nginx:lts-alpine
+FROM nginx:alpine
 
 COPY --from=base app/build /usr/share/nginx/html
 

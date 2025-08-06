@@ -1,5 +1,5 @@
 networks:
-  fortremote-natwork:
+  fortremote-network:
     name: fortremote-nework
     driver: bridge
 services:

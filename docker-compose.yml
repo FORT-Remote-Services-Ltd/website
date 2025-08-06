@@ -1,0 +1,15 @@
+networks:
+  fortremote-network:
+    name: fortremote-network
+    driver: bridge
+services:
+  fortremote-web:
+    image: ghcr.io/fort-remote-services-ltd/fortremote-web:latest
+    container_name: fortremote_website
+    restart: unless-stopped
+    mem_limit: 192m
+    cpus: "0.1"
+    expose:
+      - 80
+    networks:
+      - fortremote-network

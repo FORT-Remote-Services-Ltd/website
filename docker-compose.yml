@@ -1,6 +1,6 @@
 networks:
   fortremote-network:
-    name: fortremote-nework
+    name: fortremote-network
     driver: bridge
 services:
   fortremote-web:

@@ -4,7 +4,7 @@ networks:
     driver: bridge
 services:
   fortremote-web:
-    image: nginx
+    image: ghcr.io/fort-remote-services-ltd/fortremote-web:latest
     container_name: fortremote_website
     restart: unless-stopped
     mem_limit: 192m

@@ -75,6 +75,7 @@ jobs:
               
               echo "Stop containers!!"
               docker compose down
+              rm docker-compose.yml
 
               echo "Download latest docker-compose.yaml ..."
               curl -fsSL -H "Authorization: token ${{ secrets.GHCR_PAT }}" \
@@ -93,6 +94,9 @@ jobs:
               
               echo "Docker clean Up ..."
               docker system prune -af
+              echo ""
+              echo ""
+              docker compose ps
             fi
           EOF
 

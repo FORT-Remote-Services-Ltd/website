@@ -86,10 +86,10 @@ jobs:
               chmod 0640 ./docker-compose.yml
               
               echo "Pulling latest container ..."
-              docker compose pull fortremote
+              docker compose pull fortremote-web
 
               echo "Restarting the container ..."
-              docker compose up -d --force-recreate --no-deps fortremote
+              docker compose up -d --force-recreate --no-deps fortremote-web
               
               echo "Docker clean Up ..."
               docker system prune -af

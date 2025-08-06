@@ -18,6 +18,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
       
       - name: Build Docker Image
         run: |
@@ -91,13 +94,13 @@ jobs:
 
               echo "Restarting the container ..."
               docker compose up -d --force-recreate --no-deps fortremote-web
-              
-              echo "Docker clean Up ..."
-              docker system prune -af
-              echo ""
-              echo ""
-              docker compose ps
             fi
+
+            echo "Docker clean Up ..."
+            docker system prune -af
+            echo ""
+            echo ""
+            docker compose ps
           EOF
 
       - name: CleanUp

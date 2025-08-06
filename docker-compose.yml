@@ -1,7 +1,14 @@
+networks:
+  fortremote-natwork:
+    name: fortremote-nework
+    driver: bridge
 services:
-  fortremote:
+  fortremote-web:
     image: nginx
     container_name: fortremote_website
+    restart: unless-stopped
+    mem_limit: 192m
+    cpus: "0.1"
     expose:
       - 80
     networks:
